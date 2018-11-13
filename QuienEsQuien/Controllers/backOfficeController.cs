@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -145,7 +146,7 @@ namespace QuienEsQuien.Controllers
                 return RedirectToAction("Index", "Home");
             }
         }
-
+        [HttpPost]
         public ActionResult CosasATrabajador(Categorias x, string Accion, int Id = 0)
         {
             x.IdCategoria = Id;
@@ -191,8 +192,7 @@ namespace QuienEsQuien.Controllers
             else
             {
                 return RedirectToAction("Index", "Home");
-            }
-        }
+            } }
         //------------------------------------------------------------
 
         //ABM PERSONAJES
@@ -244,25 +244,13 @@ namespace QuienEsQuien.Controllers
                 }
                 if (Accion == "Eliminar")
                 {
-                    List<Personajes> lista = MiConexion1.ListarPersonajes();
-                    foreach (Personajes miPersonaje in lista)
-                    {
-                        if (miPersonaje.IdPersonaje == ID)
-                        {
-                            ViewBag.BajaCategoria = "No se puede eliminar la categoría seleccionada porque uno o más personajes pertenecen a ella";
-                            x = false;
-                            List<Personajes> Personaje = new List<Personajes>();
-                            Personaje = MiConexion1.ListarPersonajes();
-                            ViewBag.Lista = Personaje;
-                        }
-                    }
-                    if (x == true)
-                    {
+                   
+                    
                         MiConexion1.EliminarPersonaje(ID);
                         List<Personajes> Personaje = new List<Personajes>();
                         Personaje = MiConexion1.ListarPersonajes();
                         ViewBag.Lista = Personaje;
-                    }
+                    
                     return View("ABM_Personajes");
                 }
                 if (Accion == "Insertar")
@@ -277,28 +265,56 @@ namespace QuienEsQuien.Controllers
                 return RedirectToAction("Index", "Home");
             }
         }
-
-        public ActionResult CosasAPersonaje(string Imagen, Personajes x, string Accion, int Id = 0)
+        [HttpPost]
+        public ActionResult CosasAPersonaje(Personajes x, string Accion, int Id = 0)
+            
         {
-            x.IdCategoria = Id;
+            string path = null;
+            string fileName = null;
+            x.IdPersonaje = Id;
             if (Convert.ToBoolean(Session["AdminNow"]) == true)
             {
                 Conexion MiConexion2 = new Conexion();
                 if (Accion == "Insertar")
                 {
                     MiConexion2.InsertarPersonaje(x);
+                    if (x.Archivo  != null)
+                    {
+                        path = Server.MapPath("~/Content/");
+                        fileName = Path.GetFileName(x.Archivo.FileName);
+                        string filename = x.Archivo.FileName;
+                        x.Archivo.SaveAs(path + fileName);
+                        path = path + fileName;
+                        x.Imagen = x.Archivo.FileName;
+                    }
                 }
                 if (Accion == "Modificar")
                 {
-                    x.Imagen = Imagen;
-                    if (Imagen != x.Imagen)
+                   
+                    if (x.Archivo == null)
+                    {
+                      string Imagen1 =  MiConexion2.ObtenerImagen(Id);
+                        x.Imagen = Imagen1;
+
+                    }
+                    else
+                    {
+                        path = Server.MapPath("~/Content/");
+                        fileName = Path.GetFileName(x.Archivo.FileName);
+                        string filename = x.Archivo.FileName;
+                        x.Archivo.SaveAs(path + fileName);
+                        path = path + fileName;
+                        x.Imagen = x.Archivo.FileName;
+                    }
+                   
+                  
                     MiConexion2.ModificarPersonaje(x);
                 }
                 List<Personajes> MiCateforia = new List<Personajes>();
                 MiCateforia = MiConexion2.ListarPersonajes();
 
                 ViewBag.Lista = MiCateforia;
-                return View("ABM_Categorias");
+                return View("ABM_Personajes");
             }
             else
             {

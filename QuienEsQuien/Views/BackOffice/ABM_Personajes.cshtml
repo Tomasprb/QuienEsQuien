@@ -36,7 +36,7 @@
 
         <h2>ABM</h2>
         <p>@ViewBag.BajaPersonaje</p>
-        <h3>@Html.ActionLink("Ingresar Personaje", "EdicionPersonajes", "BackOffice", new { Accion = "Insertar" }, null);</h3>
+        <h3>@Html.ActionLink("Ingresar Personaje", "EdicionPersonaje", "BackOffice", new { Accion = "Insertar" }, null);</h3>
 
         <table align="center" bordercolor="Black" width="350px">
             @foreach (Personajes MiPersonaje in ViewBag.Lista)
@@ -44,7 +44,10 @@
 
             <tr>
                 <td>
-                    <img src="~/Content/@MiPersonaje.Imagen" alt="Foto Personaje" class="img-rounded" />
+                    <img src="~/Content/@MiPersonaje.Imagen" alt="Foto Personaje" class="img-rounded"
+                         style="width: 100px;
+                                 height: 100px;
+                    "/>
                 </td>
                 <td>
                     <h3><b>@MiPersonaje.Nombre</b></h3>

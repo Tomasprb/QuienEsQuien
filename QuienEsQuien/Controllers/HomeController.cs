@@ -30,7 +30,7 @@ namespace QuienesQuien.Controllers
         {
             return View();
         }
-
+        [HttpPost]
         public ActionResult Login(string Nombre, string Contraseña)
         {
             if (Nombre == "" || Contraseña == "")

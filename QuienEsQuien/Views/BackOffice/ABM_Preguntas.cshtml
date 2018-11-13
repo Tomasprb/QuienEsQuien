@@ -38,7 +38,7 @@
         <p>@ViewBag.BajaPreguntas</p>
         <h3>@Html.ActionLink("Ingresar Pregunta", "Edicion Pregunta", "BackOffice", new { Accion = "Insertar" }, null)</h3>
 
-        <table align="center" bordercolor="Black" width="350px">
+        <table align="center" bordercolor="Black" >
             @foreach (Preguntas MiPregunta in ViewBag.Lista)
             {
                 <tr>

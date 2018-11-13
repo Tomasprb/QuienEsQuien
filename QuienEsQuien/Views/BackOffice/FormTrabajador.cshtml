@@ -22,19 +22,16 @@
             if (ViewBag.Accion == "Ver")
             {
                 <pr>Nombre: </pr> @Html.TextBoxFor(x => x.Nombre, new { disabled = "disabled" }) <br /> <br />
-                <form action="@Url.Action("ABM_Categorias", "BackOffice")">
-                    <button class="black button">Volver</button>
-                </form>
+
             }
             else
             {
                 <pr>Nombre: </pr> @Html.TextBoxFor(x => x.Nombre) <br /> <br />
-                <form action="@Url.Action("ABM_Categorias", "BackOffice")">
-                    <button class="black button">Siguiente</button>
-                </form>
+
             }
             <input type="hidden" name="Accion" value=@ViewBag.Accion>
             <input type="hidden" name="Id" value=@ViewBag.Id>
+            <input type="submit" value="Enviar" />
         }
     </div>
 </body>

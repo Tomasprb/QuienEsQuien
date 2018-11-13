@@ -16,7 +16,7 @@
 <body class="w3-black">
     <div class="w3-padding-large" id="main">
         <h2>Login</h2>
-        <form action="@Url.Action("Login", "Home")" method="get">
+        <form action="@Url.Action("Login", "Home")" method="post">
             @ViewBag.NoUserLogin <br /> <br />
             <div style="margin-bottom:10px;display:inline-block">Nombre: <span style="margin-left:28px">@Html.TextBoxFor(x => x.Nombre, new { type = "string" })<span style="font-size:10px;color:red;margin-left:5px" align="center">@ViewBag.NombreNo </span> </span> </div> <br />
             <div>Contraseña: <span style="margin-left:5px">@Html.PasswordFor(x => x.Contraseña, new { type = "password" })<span style="font-size:10px;color:red;margin-left:4px" align="center"> @ViewBag.ContraseñaNo </span></span> </div> <br />

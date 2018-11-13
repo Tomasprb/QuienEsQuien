@@ -11,6 +11,7 @@ namespace QuienEsQuien.Models
         private string _Nombre;
         private string _Imagen;
         private int _IdCategoria;
+        private HttpPostedFileBase _archivo;
 
         public Personajes(int IdPersonaje, string Nombre, string Imagen, int IdCategoria)
         {
@@ -71,6 +72,18 @@ namespace QuienEsQuien.Models
             set
             {
                 _IdCategoria = value;
+            }
+        }
+
+        public HttpPostedFileBase Archivo
+        {
+            get
+            {
+                return _archivo;
+            }
+            set
+            {
+                _archivo = value;
             }
         }
     }

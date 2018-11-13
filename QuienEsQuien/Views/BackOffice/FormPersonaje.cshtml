@@ -19,32 +19,36 @@
 
 
 
-        @using (Html.BeginForm("CosasAPersonaje", "BackOffice", FormMethod.Post))
+        @using (Html.BeginForm("CosasAPersonaje", "BackOffice", FormMethod.Post, new { enctype = "multipart/form-data" }))
         {
             if (ViewBag.Accion == "Ver")
 
             {
                 <img src="~/Content/@ViewBag.Imagen" alt="Foto Personaje" class="img-rounded" />
                 <pr>Nombre</pr> @Html.TextBoxFor(x => x.Nombre, new { disabled = "disabled" }) <br />
-                <pr>Imagen</pr> @Html.TextBoxFor(x => x.Nombre, new { disabled = "disabled", type = "file" }) <br />
+                <pr>Imagen</pr> @Html.TextBoxFor(x => x.Archivo, new { type = "file" }) <br />
                 @Html.DropDownListFor(x => x.IdCategoria, new SelectList(ViewBag.Categorias, "IdCategoria", "Nombre", new { disabled = "disabled" }))
             }
             else
             {
+                <pr>Nombre</pr> @Html.TextBoxFor(x => x.Nombre, new { required = "required" })<br />
+                if (ViewBag.Accion == "Insertar")
+                {
+                    <pr>Imagen</pr> @Html.TextBoxFor(x => x.Archivo, new { type = "file", required = "required" }) <br />
 
-                <img src="~/Content/@ViewBag.Imagen" alt="Foto Personaje" class="img-rounded" />
-                <pr>Nombre</pr> @Html.TextBoxFor(x => x.Nombre) <br />
-                <pr>Imagen</pr> @Html.TextBoxFor(x => x.Imagen, new { type = "file" }) <br />
+                }
+                else
+                {
+                    <img src="~/Content/@ViewBag.Imagen" alt="Foto Personaje" class="img-rounded" />
+                    <pr>Imagen</pr> @Html.TextBoxFor(x => x.Archivo, new { type = "file" }) <br />
+                }
+
                 @Html.DropDownListFor(x => x.IdCategoria, new SelectList(ViewBag.Categorias, "IdCategoria", "Nombre"))
 
             }
-          
-            <input type="hidden" name="Accion" value=@ViewBag.Accion>
-            <input type="hidden" name="Id" value=@ViewBag.Id>
-            <input type="hidden" name="Imagen" value=@ViewBag.Imagen>
+            <input type="hidden" name="Accion" value="@ViewBag.Accion" />
+            <input type="hidden" name="Id" value="@ViewBag.Id" />
             <input type="submit" value="Enviar" />
         }
-
-
     </div>
 </body>
