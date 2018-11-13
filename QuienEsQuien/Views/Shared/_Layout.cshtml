@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/Content/Cosa.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <a href="@Url.Action("Index", "Home")" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <image src="~/Content/Layoutbuttons/homepic.png" class="fa w3-xxlarge" style="width:40px"></image>
+            <p>HOME</p>
+        </a>
+        @if (Session["NombreNow"] != null)
+        {
+            if (Convert.ToBoolean(Session["AdminNow"]) == true)
+            {
+                <a href="@Url.Action("Index", "Backoffice")" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+                    <image src="~/Content/Layoutbuttons/backofficepic.png" class="fa w3-xxlarge" style="width:40px"></image>
+                    <p>BACKOFFICE</p>
+                </a>
+            }
+        }
+        <a href="@Url.Action("Index", "Game")" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <image src="~/Content/Layoutbuttons/gamepic.png" class="fa w3-xxlarge" style="width:40px"></image>
+            <p>GAME</p>
+        </a>
+        <a href="@Url.Action("Nosotros", "Home")" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+            <image src="~/Content/Layoutbuttons/infopic.png" class="fa w3-xxlarge" style="width:40px"></image>
+            <p>ABOUT</p>
+        </a>
+        @if (Session["NombreNow"] == null)
+        {
+            <a style="position:absolute;bottom:110px" href="@Url.Action("LoginParcial", "Home")" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+                <image src="~/Content/Layoutbuttons/loginpic.png" class="fa w3-xxlarge" style="width:40px"></image>
+                <p>LOGIN</p>
+            </a>
+            <a style="position:absolute;bottom:10px" href="@Url.Action("RegisterParcial", "Home")" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+                <image src="~/Content/Layoutbuttons/registerpic.png" class="fa w3-xxlarge" style="width:40px"></image>
+                <p>REGISTER</p>
+            </a>
+        }
+        else
+        {
+            <a style="position:absolute;bottom:110px" href="@Url.Action("Perfil", "Home")" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+                <image src="~/Content/Layoutbuttons/userpic.png" class="fa w3-xxlarge" style="width:40px"></image>
+                <p>@Session["NombreNow"]</p>
+            </a>
+            <a style="position:absolute;bottom:10px" href="@Url.Action("Logout", "Home")" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+                <image src="~/Content/Layoutbuttons/logoutpic.png" class="fa w3-xxlarge" style="width:40px"></image>
+                <p>LOGOUT</p>
+            </a>
+        }
+    </nav>
+
+    @RenderBody()
+
+</body>
+</html>

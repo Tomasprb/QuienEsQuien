@@ -1,0 +1,41 @@
+﻿@using QuienEsQuien.Models
+@model Categorias
+@{
+    ViewBag.Title = "FormTrabajador";
+}
+
+<head>
+    <link href="~/Styles/Estilos1.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/Content/Cosa.css" rel="stylesheet" />
+    <link href="~/Styles/Buttons.css" rel="stylesheet" />
+</head>
+<body class="w3-black">
+    <div class="w3-padding-large" id="main">
+        <h2>Edite Las casillas a su gusto </h2>
+        @using (Html.BeginForm("CosasATrabajador", "BackOffice", FormMethod.Post))
+        {
+            if (ViewBag.Accion == "Ver")
+            {
+                <pr>Nombre: </pr> @Html.TextBoxFor(x => x.Nombre, new { disabled = "disabled" }) <br /> <br />
+                <form action="@Url.Action("ABM_Categorias", "BackOffice")">
+                    <button class="black button">Volver</button>
+                </form>
+            }
+            else
+            {
+                <pr>Nombre: </pr> @Html.TextBoxFor(x => x.Nombre) <br /> <br />
+                <form action="@Url.Action("ABM_Categorias", "BackOffice")">
+                    <button class="black button">Siguiente</button>
+                </form>
+            }
+            <input type="hidden" name="Accion" value=@ViewBag.Accion>
+            <input type="hidden" name="Id" value=@ViewBag.Id>
+        }
+    </div>
+</body>
+

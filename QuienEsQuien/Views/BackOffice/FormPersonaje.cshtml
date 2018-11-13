@@ -1,0 +1,50 @@
+﻿@using QuienEsQuien.Models
+@model Personajes
+@{
+    ViewBag.Title = "FormPersonaje";
+}
+
+<head>
+    <link href="~/Styles/Estilos1.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/Content/Cosa.css" rel="stylesheet" />
+</head>
+<body class="w3-black">
+    <div class="w3-padding-large" id="main">
+        <h2>Edite Las casillas a su gusto </h2>
+
+
+
+        @using (Html.BeginForm("CosasAPersonaje", "BackOffice", FormMethod.Post))
+        {
+            if (ViewBag.Accion == "Ver")
+
+            {
+                <img src="~/Content/@ViewBag.Imagen" alt="Foto Personaje" class="img-rounded" />
+                <pr>Nombre</pr> @Html.TextBoxFor(x => x.Nombre, new { disabled = "disabled" }) <br />
+                <pr>Imagen</pr> @Html.TextBoxFor(x => x.Nombre, new { disabled = "disabled", type = "file" }) <br />
+                @Html.DropDownListFor(x => x.IdCategoria, new SelectList(ViewBag.Categorias, "IdCategoria", "Nombre", new { disabled = "disabled" }))
+            }
+            else
+            {
+
+                <img src="~/Content/@ViewBag.Imagen" alt="Foto Personaje" class="img-rounded" />
+                <pr>Nombre</pr> @Html.TextBoxFor(x => x.Nombre) <br />
+                <pr>Imagen</pr> @Html.TextBoxFor(x => x.Imagen, new { type = "file" }) <br />
+                @Html.DropDownListFor(x => x.IdCategoria, new SelectList(ViewBag.Categorias, "IdCategoria", "Nombre"))
+
+            }
+          
+            <input type="hidden" name="Accion" value=@ViewBag.Accion>
+            <input type="hidden" name="Id" value=@ViewBag.Id>
+            <input type="hidden" name="Imagen" value=@ViewBag.Imagen>
+            <input type="submit" value="Enviar" />
+        }
+
+
+    </div>
+</body>

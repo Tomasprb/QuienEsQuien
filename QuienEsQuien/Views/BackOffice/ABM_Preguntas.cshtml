@@ -1,0 +1,61 @@
+﻿@using QuienEsQuien.Models
+@{
+    ViewBag.Title = "ABM_Preguntas";
+}
+<head>
+    <link href="~/Styles/Estilos1.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/Content/Cosa.css" rel="stylesheet" />
+    <style>
+        table, td, th {
+            border: 1px solid white;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 750px;
+        }
+
+        th {
+            height: 50px;
+        }
+
+        .Centrado {
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="w3-black">
+    <div class="w3-padding-large" id="main">
+
+        <h2>ABM_Preguntas</h2>
+
+        <h2>ABM</h2>
+        <p>@ViewBag.BajaPreguntas</p>
+        <h3>@Html.ActionLink("Ingresar Pregunta", "Edicion Pregunta", "BackOffice", new { Accion = "Insertar" }, null)</h3>
+
+        <table align="center" bordercolor="Black" width="350px">
+            @foreach (Preguntas MiPregunta in ViewBag.Lista)
+            {
+                <tr>
+                    <td>
+                        <h3><b>@MiPregunta.Texto</b></h3>
+                    </td>
+                    <td class="Centrado">
+                        <h3> @Html.ActionLink("M", "EdicionPregunta", "BackOffice", new { Accion = "Modificar", ID = MiPregunta.IdPregunta }, null)</h3>
+                    </td>
+                    <td class="Centrado">
+                        <h3> @Html.ActionLink("E", "EdicionPregunta", "BackOffice", new { Accion = "Eliminar", ID = MiPregunta.IdPregunta }, null)</h3>
+                    </td>
+                    <td class="Centrado">
+                        <h3> @Html.ActionLink("V", "EdicionPregunta", "BackOffice", new { Accion = "Ver", ID = MiPregunta.IdPregunta }, null)</h3>
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>

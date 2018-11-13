@@ -1,0 +1,65 @@
+todos y cada uno de los colores puestos aqui estan dispuestos a cambios;
+
+
+
+.fondo{
+    background: red !important;
+}
+
+.TextoTitulo 
+{
+color : black;
+border: solid red;
+}
+.jumbotronPersonalizado {
+    padding: 40px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 3.1428571435;
+    color: yellow;
+    background-color: Highlight;
+}
+.jumbotronPersonalizado2 {
+    padding: 40px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 3.1428571435;
+    color: forestgreen;
+    background-color: yellow;
+}
+
+.boton_personalizado {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+
+.boton_personalizado2 {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: red;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+
+    .boton_personalizado:hover {
+        color: #1883ba;
+        background-color: #ffffff;
+    }
+.boton_personalizado2:hover {
+    color: #1883ba;
+    background-color: #ffffff;
+}
+.texto_1 {
+    font-weight: bold
+}

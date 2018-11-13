@@ -1,0 +1,28 @@
+﻿@using QuienEsQuien.Models
+@model Usuarios
+@{
+    ViewBag.Title = "RegisterParcial";
+}
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/Content/Cosa.css" rel="stylesheet" />
+    <link href="~/Styles/Buttons.css" rel="stylesheet" />
+</head>
+<body class="w3-black">
+    <div class="w3-padding-large" id="main">
+        <h2>Registro</h2>
+        <form action="@Url.Action("Register", "Home")" method="get">
+            @ViewBag.UserExiste <br /> <br />
+            <div style="margin-bottom:10px;display:inline-block">Nombre: <span style="margin-left:28px">@Html.TextBoxFor(x => x.Nombre, new { type = "string" })<span style="font-size:10px;color:red;margin-left:5px" align="center">@ViewBag.NombreNo </span> </span> </div> <br />
+            <div>Contraseña: <span style="margin-left:5px">@Html.PasswordFor(x => x.Contraseña, new { type = "password" })<span style="font-size:10px;color:red;margin-left:4px" align="center"> @ViewBag.ContraseñaNo </span></span> </div> <br />
+            <button class="button black" style="margin-left:182px">Siguiente</button>
+        </form>
+    </div>
+</body>

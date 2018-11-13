@@ -1,0 +1,14 @@
+P.TextoTitulo {
+color : black;
+border: solid red;
+}
+
+P.TextoParrafo {
+color : black;
+border: solid blue;
+}
+
+Jumbotron.Casilla {
+color : lighter blue;
+border: solid yellow;
+}
