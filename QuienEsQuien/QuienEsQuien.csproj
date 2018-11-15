@@ -231,6 +231,7 @@
     <Content Include="Content\Layoutbuttons\logoutpic.png" />
     <Content Include="Content\Layoutbuttons\registerpic.png" />
     <Content Include="Content\Minnie.jpg" />
+    <Content Include="Content\Relleno home.jpg" />
     <Content Include="Styles\animate.css" />
     <Content Include="Styles\Buttons.css" />
     <Content Include="Styles\Estilos1.css" />

@@ -10,11 +10,10 @@ namespace QuienesQuien.Models
 {
     public class Conexion
     {
-<<<<<<< HEAD
         private static string SC = "Server=10.128.8.16;Database=QEQB07;User Id=QEQB07;Password=QEQB07;";
-=======
-         private static string SC = "Server=10.128.8.16;Database=QEQB07;User Id=QEQB07;Password=QEQB07;";
->>>>>>> d2af26acf05509e63270427ae7130dfcc233463b
+
+
+
 
         // private static string SC = "Server=LAPTOP-BT997U35\\SQLEXPRESS;Database=QEQB07;User Id=ORT;Password=ort;";
 
