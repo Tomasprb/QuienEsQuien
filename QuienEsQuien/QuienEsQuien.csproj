@@ -210,8 +210,8 @@
     <Compile Include="Models\Login.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Partida.cs" />
-    <Compile Include="Models\Personajes+Preguntas.cs" />
     <Compile Include="Models\Personajes.cs" />
+    <Compile Include="Models\Personaje_pregunta.cs" />
     <Compile Include="Models\Preguntas.cs" />
     <Compile Include="Models\Ranking.cs" />
     <Compile Include="Models\Usuarios.cs" />
@@ -231,8 +231,6 @@
     <Content Include="Content\Layoutbuttons\logoutpic.png" />
     <Content Include="Content\Layoutbuttons\registerpic.png" />
     <Content Include="Content\Minnie.jpg" />
-    <Content Include="Content\Relleno home.jpg" />
-    <Content Include="Styles\animate.css" />
     <Content Include="Styles\Buttons.css" />
     <Content Include="Styles\Estilos1.css" />
     <Content Include="favicon.ico" />
@@ -256,7 +254,6 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Styles\hover.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -297,12 +294,12 @@
     <Content Include="Views\Game\Index.cshtml" />
     <Content Include="Views\BackOffice\ABM_Categorias.cshtml" />
     <Content Include="Views\BackOffice\FormTrabajador.cshtml" />
-    <Content Include="Views\Home\Perfil.cshtml" />
     <Content Include="Views\BackOffice\ABM_Personajes.cshtml" />
     <Content Include="Views\BackOffice\FormPersonaje.cshtml" />
     <Content Include="Views\BackOffice\ABM_Preguntas.cshtml" />
     <Content Include="Views\BackOffice\ABM_Personajes_Pregunta.cshtml" />
     <Content Include="Views\BackOffice\FinPregunta.cshtml" />
+    <Content Include="Views\Home\Perfil.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

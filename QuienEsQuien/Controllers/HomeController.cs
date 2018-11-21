@@ -117,6 +117,7 @@ namespace QuienesQuien.Controllers
 
         public ActionResult Perfil()
         {
+            ViewBag.Usuario = bd.ObtenerUsuario(Session["NombreNow"].ToString());
             return View();
         }
     }

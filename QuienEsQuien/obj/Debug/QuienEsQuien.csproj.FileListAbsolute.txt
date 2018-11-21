@@ -1,82 +1,1405 @@
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\roslyn\csc.exe
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\roslyn\Microsoft.CSharp.Core.targets
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\roslyn\Microsoft.VisualBasic.Core.targets
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\roslyn\System.Collections.Immutable.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\roslyn\System.Reflection.Metadata.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\roslyn\vbc.exe
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\roslyn\VBCSCompiler.exe
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\roslyn\VBCSCompiler.exe.config
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\QuienEsQuien.dll.config
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\QuienEsQuien.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\QuienEsQuien.pdb
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Antlr3.Runtime.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\EntityFramework.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\EntityFramework.SqlServer.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.Agent.Intercept.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.PerfCounterCollector.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.Web.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.WindowsServer.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.ApplicationInsights.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Google.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.Web.Infrastructure.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Newtonsoft.Json.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Owin.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\System.Web.Helpers.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\System.Web.Mvc.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\System.Web.Optimization.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\System.Web.Razor.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\System.Web.WebPages.Deployment.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\System.Web.WebPages.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\System.Web.WebPages.Razor.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\WebGrease.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.Web.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.WindowsServer.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.ApplicationInsights.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\System.Web.Helpers.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\System.Web.Mvc.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\System.Web.Optimization.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\System.Web.Razor.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\System.Web.WebPages.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\System.Web.WebPages.Deployment.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\System.Web.WebPages.Razor.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Antlr3.Runtime.pdb
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Newtonsoft.Json.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\EntityFramework.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\EntityFramework.SqlServer.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Google.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CoreCompileInputs.cache
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CopyComplete
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.dll
-Z:\Programacion\QuienEsQuien\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.pdb
+Z:\QuienEsQuien\QuienEsQuien\bin\roslyn\csc.exe
+Z:\QuienEsQuien\QuienEsQuien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\roslyn\Microsoft.CSharp.Core.targets
+Z:\QuienEsQuien\QuienEsQuien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+Z:\QuienEsQuien\QuienEsQuien\bin\roslyn\System.Collections.Immutable.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\roslyn\System.Reflection.Metadata.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\roslyn\vbc.exe
+Z:\QuienEsQuien\QuienEsQuien\bin\roslyn\VBCSCompiler.exe
+Z:\QuienEsQuien\QuienEsQuien\bin\roslyn\VBCSCompiler.exe.config
+Z:\QuienEsQuien\QuienEsQuien\bin\QuienEsQuien.dll.config
+Z:\QuienEsQuien\QuienEsQuien\bin\QuienEsQuien.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\QuienEsQuien.pdb
+Z:\QuienEsQuien\QuienEsQuien\bin\Antlr3.Runtime.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\EntityFramework.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\EntityFramework.SqlServer.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.Agent.Intercept.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.PerfCounterCollector.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.Web.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.WindowsServer.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.ApplicationInsights.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Google.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Web.Infrastructure.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\Newtonsoft.Json.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\Owin.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\System.Web.Helpers.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\System.Web.Mvc.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\System.Web.Optimization.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\System.Web.Razor.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\System.Web.WebPages.Deployment.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\System.Web.WebPages.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\System.Web.WebPages.Razor.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\WebGrease.dll
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.Web.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.WindowsServer.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.ApplicationInsights.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\System.Web.Helpers.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\System.Web.Mvc.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\System.Web.Optimization.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\System.Web.Razor.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\System.Web.WebPages.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\System.Web.WebPages.Deployment.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\System.Web.WebPages.Razor.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\Antlr3.Runtime.pdb
+Z:\QuienEsQuien\QuienEsQuien\bin\Newtonsoft.Json.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\EntityFramework.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\EntityFramework.SqlServer.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Google.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.xml
+Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+Z:\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.csprojResolveAssemblyReference.cache
+Z:\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.dll
+Z:\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.pdb
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\roslyn\csc.exe
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\roslyn\Microsoft.CSharp.Core.targets
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\roslyn\System.Collections.Immutable.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\roslyn\System.Reflection.Metadata.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\roslyn\vbc.exe
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\roslyn\VBCSCompiler.exe
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\roslyn\VBCSCompiler.exe.config
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\QuienEsQuien.dll.config
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\QuienEsQuien.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\QuienEsQuien.pdb
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Antlr3.Runtime.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\EntityFramework.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\EntityFramework.SqlServer.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.Agent.Intercept.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.PerfCounterCollector.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.Web.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.WindowsServer.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.ApplicationInsights.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Google.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.Web.Infrastructure.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Newtonsoft.Json.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Owin.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\System.Web.Helpers.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\System.Web.Mvc.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\System.Web.Optimization.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\System.Web.Razor.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\System.Web.WebPages.Deployment.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\System.Web.WebPages.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\System.Web.WebPages.Razor.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\WebGrease.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.Web.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.WindowsServer.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.ApplicationInsights.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\System.Web.Helpers.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\System.Web.Mvc.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\System.Web.Optimization.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\System.Web.Razor.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\System.Web.WebPages.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\System.Web.WebPages.Deployment.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\System.Web.WebPages.Razor.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Antlr3.Runtime.pdb
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Newtonsoft.Json.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\EntityFramework.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\EntityFramework.SqlServer.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Google.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.dll
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.pdb
+Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.csprojResolveAssemblyReference.cache
+D:\QuienEsQuien\QuienEsQuien\bin\roslyn\csc.exe
+D:\QuienEsQuien\QuienEsQuien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\QuienEsQuien\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\QuienEsQuien\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\QuienEsQuien\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\QuienEsQuien\QuienEsQuien\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\QuienEsQuien\QuienEsQuien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\QuienEsQuien\QuienEsQuien\bin\roslyn\System.Collections.Immutable.dll
+D:\QuienEsQuien\QuienEsQuien\bin\roslyn\System.Reflection.Metadata.dll
+D:\QuienEsQuien\QuienEsQuien\bin\roslyn\vbc.exe
+D:\QuienEsQuien\QuienEsQuien\bin\roslyn\VBCSCompiler.exe
+D:\QuienEsQuien\QuienEsQuien\bin\roslyn\VBCSCompiler.exe.config
+D:\QuienEsQuien\QuienEsQuien\bin\QuienEsQuien.dll.config
+D:\QuienEsQuien\QuienEsQuien\bin\QuienEsQuien.dll
+D:\QuienEsQuien\QuienEsQuien\bin\QuienEsQuien.pdb
+D:\QuienEsQuien\QuienEsQuien\bin\Antlr3.Runtime.dll
+D:\QuienEsQuien\QuienEsQuien\bin\EntityFramework.dll
+D:\QuienEsQuien\QuienEsQuien\bin\EntityFramework.SqlServer.dll
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.Agent.Intercept.dll
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.dll
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.Web.dll
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.WindowsServer.dll
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.ApplicationInsights.dll
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.dll
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.dll
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.dll
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.dll
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.dll
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Google.dll
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.dll
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.dll
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Web.Infrastructure.dll
+D:\QuienEsQuien\QuienEsQuien\bin\Newtonsoft.Json.dll
+D:\QuienEsQuien\QuienEsQuien\bin\Owin.dll
+D:\QuienEsQuien\QuienEsQuien\bin\System.Web.Helpers.dll
+D:\QuienEsQuien\QuienEsQuien\bin\System.Web.Mvc.dll
+D:\QuienEsQuien\QuienEsQuien\bin\System.Web.Optimization.dll
+D:\QuienEsQuien\QuienEsQuien\bin\System.Web.Razor.dll
+D:\QuienEsQuien\QuienEsQuien\bin\System.Web.WebPages.Deployment.dll
+D:\QuienEsQuien\QuienEsQuien\bin\System.Web.WebPages.dll
+D:\QuienEsQuien\QuienEsQuien\bin\System.Web.WebPages.Razor.dll
+D:\QuienEsQuien\QuienEsQuien\bin\WebGrease.dll
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.xml
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.Web.xml
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AI.WindowsServer.xml
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.ApplicationInsights.xml
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\QuienEsQuien\QuienEsQuien\bin\System.Web.Helpers.xml
+D:\QuienEsQuien\QuienEsQuien\bin\System.Web.Mvc.xml
+D:\QuienEsQuien\QuienEsQuien\bin\System.Web.Optimization.xml
+D:\QuienEsQuien\QuienEsQuien\bin\System.Web.Razor.xml
+D:\QuienEsQuien\QuienEsQuien\bin\System.Web.WebPages.xml
+D:\QuienEsQuien\QuienEsQuien\bin\System.Web.WebPages.Deployment.xml
+D:\QuienEsQuien\QuienEsQuien\bin\System.Web.WebPages.Razor.xml
+D:\QuienEsQuien\QuienEsQuien\bin\Antlr3.Runtime.pdb
+D:\QuienEsQuien\QuienEsQuien\bin\Newtonsoft.Json.xml
+D:\QuienEsQuien\QuienEsQuien\bin\EntityFramework.xml
+D:\QuienEsQuien\QuienEsQuien\bin\EntityFramework.SqlServer.xml
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.xml
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.xml
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.xml
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.xml
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.xml
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.xml
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Google.xml
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.xml
+D:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.csprojAssemblyReference.cache
+D:\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CoreCompileInputs.cache
+D:\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CopyComplete
+D:\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.dll
+D:\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.pdb
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\roslyn\csc.exe
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\roslyn\vbc.exe
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\roslyn\VBCSCompiler.exe
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\QuienEsQuien.dll.config
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\QuienEsQuien.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\QuienEsQuien.pdb
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Antlr3.Runtime.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\EntityFramework.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\EntityFramework.SqlServer.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AI.Web.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Newtonsoft.Json.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Owin.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\System.Web.Helpers.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\System.Web.Mvc.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\System.Web.Optimization.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\System.Web.Razor.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\System.Web.WebPages.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\WebGrease.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AI.Web.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\System.Web.Helpers.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\System.Web.Mvc.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\System.Web.Optimization.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\System.Web.Razor.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\System.Web.WebPages.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\System.Web.WebPages.Razor.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Antlr3.Runtime.pdb
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Newtonsoft.Json.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\EntityFramework.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\EntityFramework.SqlServer.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\obj\Debug\QuienEsQuien.csprojAssemblyReference.cache
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CoreCompileInputs.cache
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CopyComplete
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\obj\Debug\QuienEsQuien.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\QEQ\QuienEsQuienJara\QuienEsQuien\obj\Debug\QuienEsQuien.pdb
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\roslyn\csc.exe
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\roslyn\Microsoft.CSharp.Core.targets
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\roslyn\System.Collections.Immutable.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\roslyn\System.Reflection.Metadata.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\roslyn\vbc.exe
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\roslyn\VBCSCompiler.exe
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\roslyn\VBCSCompiler.exe.config
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\QuienEsQuien.dll.config
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\QuienEsQuien.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\QuienEsQuien.pdb
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Antlr3.Runtime.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\EntityFramework.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\EntityFramework.SqlServer.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AI.Agent.Intercept.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AI.PerfCounterCollector.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AI.Web.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AI.WindowsServer.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.ApplicationInsights.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.Google.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Web.Infrastructure.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Newtonsoft.Json.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Owin.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\System.Web.Helpers.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\System.Web.Mvc.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\System.Web.Optimization.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\System.Web.Razor.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\System.Web.WebPages.Deployment.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\System.Web.WebPages.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\System.Web.WebPages.Razor.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\WebGrease.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AI.Web.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AI.WindowsServer.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.ApplicationInsights.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\System.Web.Helpers.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\System.Web.Mvc.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\System.Web.Optimization.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\System.Web.Razor.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\System.Web.WebPages.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\System.Web.WebPages.Deployment.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\System.Web.WebPages.Razor.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Antlr3.Runtime.pdb
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Newtonsoft.Json.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\EntityFramework.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\EntityFramework.SqlServer.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.Google.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\obj\Debug\QuienEsQuien.csprojAssemblyReference.cache
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CoreCompileInputs.cache
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CopyComplete
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\obj\Debug\QuienEsQuien.dll
+Z:\Programación\Quien es quien\QuienEsQuienJara\QuienEsQuien\obj\Debug\QuienEsQuien.pdb
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\roslyn\csc.exe
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\roslyn\vbc.exe
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\roslyn\VBCSCompiler.exe
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\QuienEsQuien.dll.config
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\QuienEsQuien.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\QuienEsQuien.pdb
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Antlr3.Runtime.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\EntityFramework.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\EntityFramework.SqlServer.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.AI.Web.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.Owin.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Newtonsoft.Json.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Owin.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\System.Web.Helpers.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\System.Web.Mvc.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\System.Web.Optimization.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\System.Web.Razor.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\System.Web.WebPages.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\WebGrease.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.AI.Web.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\System.Web.Helpers.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\System.Web.Mvc.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\System.Web.Optimization.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\System.Web.Razor.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\System.Web.WebPages.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\System.Web.WebPages.Razor.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Antlr3.Runtime.pdb
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Newtonsoft.Json.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\EntityFramework.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\EntityFramework.SqlServer.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.Owin.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\obj\Debug\QuienEsQuien.csprojAssemblyReference.cache
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CoreCompileInputs.cache
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CopyComplete
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\obj\Debug\QuienEsQuien.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\1.2\QuienEsQuien\obj\Debug\QuienEsQuien.pdb
+Z:\Programación\1.2\QuienEsQuien\bin\roslyn\csc.exe
+Z:\Programación\1.2\QuienEsQuien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+Z:\Programación\1.2\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+Z:\Programación\1.2\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.dll
+Z:\Programación\1.2\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+Z:\Programación\1.2\QuienEsQuien\bin\roslyn\Microsoft.CSharp.Core.targets
+Z:\Programación\1.2\QuienEsQuien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+Z:\Programación\1.2\QuienEsQuien\bin\roslyn\System.Collections.Immutable.dll
+Z:\Programación\1.2\QuienEsQuien\bin\roslyn\System.Reflection.Metadata.dll
+Z:\Programación\1.2\QuienEsQuien\bin\roslyn\vbc.exe
+Z:\Programación\1.2\QuienEsQuien\bin\roslyn\VBCSCompiler.exe
+Z:\Programación\1.2\QuienEsQuien\bin\roslyn\VBCSCompiler.exe.config
+Z:\Programación\1.2\QuienEsQuien\bin\QuienEsQuien.dll.config
+Z:\Programación\1.2\QuienEsQuien\bin\QuienEsQuien.dll
+Z:\Programación\1.2\QuienEsQuien\bin\QuienEsQuien.pdb
+Z:\Programación\1.2\QuienEsQuien\bin\Antlr3.Runtime.dll
+Z:\Programación\1.2\QuienEsQuien\bin\EntityFramework.dll
+Z:\Programación\1.2\QuienEsQuien\bin\EntityFramework.SqlServer.dll
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.AI.Agent.Intercept.dll
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.dll
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.AI.PerfCounterCollector.dll
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.AI.Web.dll
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.AI.WindowsServer.dll
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.ApplicationInsights.dll
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.dll
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.dll
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.Owin.dll
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.dll
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.dll
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.dll
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.dll
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.Google.dll
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.dll
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.dll
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.Web.Infrastructure.dll
+Z:\Programación\1.2\QuienEsQuien\bin\Newtonsoft.Json.dll
+Z:\Programación\1.2\QuienEsQuien\bin\Owin.dll
+Z:\Programación\1.2\QuienEsQuien\bin\System.Web.Helpers.dll
+Z:\Programación\1.2\QuienEsQuien\bin\System.Web.Mvc.dll
+Z:\Programación\1.2\QuienEsQuien\bin\System.Web.Optimization.dll
+Z:\Programación\1.2\QuienEsQuien\bin\System.Web.Razor.dll
+Z:\Programación\1.2\QuienEsQuien\bin\System.Web.WebPages.Deployment.dll
+Z:\Programación\1.2\QuienEsQuien\bin\System.Web.WebPages.dll
+Z:\Programación\1.2\QuienEsQuien\bin\System.Web.WebPages.Razor.dll
+Z:\Programación\1.2\QuienEsQuien\bin\WebGrease.dll
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.xml
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.xml
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.AI.Web.xml
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.AI.WindowsServer.xml
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.ApplicationInsights.xml
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+Z:\Programación\1.2\QuienEsQuien\bin\System.Web.Helpers.xml
+Z:\Programación\1.2\QuienEsQuien\bin\System.Web.Mvc.xml
+Z:\Programación\1.2\QuienEsQuien\bin\System.Web.Optimization.xml
+Z:\Programación\1.2\QuienEsQuien\bin\System.Web.Razor.xml
+Z:\Programación\1.2\QuienEsQuien\bin\System.Web.WebPages.xml
+Z:\Programación\1.2\QuienEsQuien\bin\System.Web.WebPages.Deployment.xml
+Z:\Programación\1.2\QuienEsQuien\bin\System.Web.WebPages.Razor.xml
+Z:\Programación\1.2\QuienEsQuien\bin\Antlr3.Runtime.pdb
+Z:\Programación\1.2\QuienEsQuien\bin\Newtonsoft.Json.xml
+Z:\Programación\1.2\QuienEsQuien\bin\EntityFramework.xml
+Z:\Programación\1.2\QuienEsQuien\bin\EntityFramework.SqlServer.xml
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.xml
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.xml
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.Owin.xml
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.xml
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.xml
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.xml
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.xml
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.xml
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.Google.xml
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.xml
+Z:\Programación\1.2\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+Z:\Programación\1.2\QuienEsQuien\obj\Debug\QuienEsQuien.csprojAssemblyReference.cache
+Z:\Programación\1.2\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CoreCompileInputs.cache
+Z:\Programación\1.2\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CopyComplete
+Z:\Programación\1.2\QuienEsQuien\obj\Debug\QuienEsQuien.dll
+Z:\Programación\1.2\QuienEsQuien\obj\Debug\QuienEsQuien.pdb
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\roslyn\csc.exe
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CSharp.Core.targets
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\roslyn\System.Collections.Immutable.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\roslyn\System.Reflection.Metadata.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\roslyn\vbc.exe
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\roslyn\VBCSCompiler.exe
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\roslyn\VBCSCompiler.exe.config
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\QuienEsQuien.dll.config
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\QuienEsQuien.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\QuienEsQuien.pdb
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Antlr3.Runtime.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\EntityFramework.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\EntityFramework.SqlServer.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.AI.Agent.Intercept.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.AI.PerfCounterCollector.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.AI.Web.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.AI.WindowsServer.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.ApplicationInsights.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Google.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.Web.Infrastructure.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Newtonsoft.Json.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Owin.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\System.Web.Helpers.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\System.Web.Mvc.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\System.Web.Optimization.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\System.Web.Razor.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Deployment.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Razor.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\WebGrease.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.AI.Web.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.AI.WindowsServer.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.ApplicationInsights.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\System.Web.Helpers.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\System.Web.Mvc.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\System.Web.Optimization.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\System.Web.Razor.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Deployment.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Razor.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Antlr3.Runtime.pdb
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Newtonsoft.Json.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\EntityFramework.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\EntityFramework.SqlServer.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Google.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+Z:\3 ort\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csprojAssemblyReference.cache
+Z:\3 ort\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CoreCompileInputs.cache
+Z:\3 ort\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CopyComplete
+Z:\3 ort\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.dll
+Z:\3 ort\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.pdb
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\roslyn\csc.exe
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\roslyn\vbc.exe
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\roslyn\VBCSCompiler.exe
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\QuienEsQuien.dll.config
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\QuienEsQuien.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\QuienEsQuien.pdb
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Antlr3.Runtime.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\EntityFramework.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\EntityFramework.SqlServer.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.AI.Web.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Newtonsoft.Json.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Owin.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\System.Web.Helpers.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\System.Web.Mvc.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\System.Web.Optimization.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\System.Web.Razor.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\WebGrease.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.AI.Web.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\System.Web.Helpers.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\System.Web.Mvc.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\System.Web.Optimization.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\System.Web.Razor.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Razor.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Antlr3.Runtime.pdb
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Newtonsoft.Json.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\EntityFramework.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\EntityFramework.SqlServer.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csprojAssemblyReference.cache
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CoreCompileInputs.cache
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CopyComplete
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Git\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.pdb
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\roslyn\csc.exe
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\roslyn\vbc.exe
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\roslyn\VBCSCompiler.exe
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\QuienEsQuien.dll.config
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\QuienEsQuien.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\QuienEsQuien.pdb
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Antlr3.Runtime.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\EntityFramework.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\EntityFramework.SqlServer.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.AI.Web.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.ApplicationInsights.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Newtonsoft.Json.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Owin.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\System.Web.Helpers.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\System.Web.Mvc.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\System.Web.Optimization.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\System.Web.Razor.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Deployment.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Razor.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\WebGrease.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.AI.Web.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.ApplicationInsights.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\System.Web.Helpers.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\System.Web.Mvc.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\System.Web.Optimization.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\System.Web.Razor.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Deployment.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Razor.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Antlr3.Runtime.pdb
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Newtonsoft.Json.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\EntityFramework.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\EntityFramework.SqlServer.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csprojAssemblyReference.cache
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CoreCompileInputs.cache
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CopyComplete
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.dll
+C:\Users\43627670\Downloads\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.pdb
+Z:\Who-is-who\QuienEsQuien\bin\roslyn\csc.exe
+Z:\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+Z:\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+Z:\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.dll
+Z:\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+Z:\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CSharp.Core.targets
+Z:\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+Z:\Who-is-who\QuienEsQuien\bin\roslyn\System.Collections.Immutable.dll
+Z:\Who-is-who\QuienEsQuien\bin\roslyn\System.Reflection.Metadata.dll
+Z:\Who-is-who\QuienEsQuien\bin\roslyn\vbc.exe
+Z:\Who-is-who\QuienEsQuien\bin\roslyn\VBCSCompiler.exe
+Z:\Who-is-who\QuienEsQuien\bin\roslyn\VBCSCompiler.exe.config
+Z:\Who-is-who\QuienEsQuien\bin\QuienEsQuien.dll.config
+Z:\Who-is-who\QuienEsQuien\bin\QuienEsQuien.dll
+Z:\Who-is-who\QuienEsQuien\bin\QuienEsQuien.pdb
+Z:\Who-is-who\QuienEsQuien\bin\Antlr3.Runtime.dll
+Z:\Who-is-who\QuienEsQuien\bin\EntityFramework.dll
+Z:\Who-is-who\QuienEsQuien\bin\EntityFramework.SqlServer.dll
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.AI.Agent.Intercept.dll
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.dll
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.AI.PerfCounterCollector.dll
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.AI.Web.dll
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.AI.WindowsServer.dll
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.ApplicationInsights.dll
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.dll
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.dll
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.dll
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.dll
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.dll
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.dll
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.dll
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Google.dll
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.dll
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.dll
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.Web.Infrastructure.dll
+Z:\Who-is-who\QuienEsQuien\bin\Newtonsoft.Json.dll
+Z:\Who-is-who\QuienEsQuien\bin\Owin.dll
+Z:\Who-is-who\QuienEsQuien\bin\System.Web.Helpers.dll
+Z:\Who-is-who\QuienEsQuien\bin\System.Web.Mvc.dll
+Z:\Who-is-who\QuienEsQuien\bin\System.Web.Optimization.dll
+Z:\Who-is-who\QuienEsQuien\bin\System.Web.Razor.dll
+Z:\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Deployment.dll
+Z:\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.dll
+Z:\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Razor.dll
+Z:\Who-is-who\QuienEsQuien\bin\WebGrease.dll
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.xml
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.xml
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.AI.Web.xml
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.AI.WindowsServer.xml
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.ApplicationInsights.xml
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+Z:\Who-is-who\QuienEsQuien\bin\System.Web.Helpers.xml
+Z:\Who-is-who\QuienEsQuien\bin\System.Web.Mvc.xml
+Z:\Who-is-who\QuienEsQuien\bin\System.Web.Optimization.xml
+Z:\Who-is-who\QuienEsQuien\bin\System.Web.Razor.xml
+Z:\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.xml
+Z:\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Deployment.xml
+Z:\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Razor.xml
+Z:\Who-is-who\QuienEsQuien\bin\Antlr3.Runtime.pdb
+Z:\Who-is-who\QuienEsQuien\bin\Newtonsoft.Json.xml
+Z:\Who-is-who\QuienEsQuien\bin\EntityFramework.xml
+Z:\Who-is-who\QuienEsQuien\bin\EntityFramework.SqlServer.xml
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.xml
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.xml
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.xml
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.xml
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.xml
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.xml
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.xml
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.xml
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Google.xml
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.xml
+Z:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+Z:\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csprojAssemblyReference.cache
+Z:\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CoreCompileInputs.cache
+Z:\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CopyComplete
+Z:\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.dll
+Z:\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.pdb
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\roslyn\csc.exe
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\roslyn\vbc.exe
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\roslyn\VBCSCompiler.exe
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\QuienEsQuien.dll.config
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\QuienEsQuien.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\QuienEsQuien.pdb
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Antlr3.Runtime.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\EntityFramework.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\EntityFramework.SqlServer.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.AI.Web.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Newtonsoft.Json.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Owin.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\System.Web.Helpers.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\System.Web.Mvc.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\System.Web.Optimization.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\System.Web.Razor.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\WebGrease.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.AI.Web.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\System.Web.Helpers.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\System.Web.Mvc.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\System.Web.Optimization.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\System.Web.Razor.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Razor.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Antlr3.Runtime.pdb
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Newtonsoft.Json.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\EntityFramework.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\EntityFramework.SqlServer.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csprojAssemblyReference.cache
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CoreCompileInputs.cache
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CopyComplete
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AFinal\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.pdb
+Z:\Programación\Who-is-who\QuienEsQuien\bin\roslyn\csc.exe
+Z:\Programación\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CSharp.Core.targets
+Z:\Programación\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+Z:\Programación\Who-is-who\QuienEsQuien\bin\roslyn\System.Collections.Immutable.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\roslyn\System.Reflection.Metadata.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\roslyn\vbc.exe
+Z:\Programación\Who-is-who\QuienEsQuien\bin\roslyn\VBCSCompiler.exe
+Z:\Programación\Who-is-who\QuienEsQuien\bin\roslyn\VBCSCompiler.exe.config
+Z:\Programación\Who-is-who\QuienEsQuien\bin\QuienEsQuien.dll.config
+Z:\Programación\Who-is-who\QuienEsQuien\bin\QuienEsQuien.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\QuienEsQuien.pdb
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Antlr3.Runtime.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\EntityFramework.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\EntityFramework.SqlServer.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.AI.Agent.Intercept.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.AI.PerfCounterCollector.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.AI.Web.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.AI.WindowsServer.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.ApplicationInsights.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Google.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.Web.Infrastructure.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Newtonsoft.Json.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Owin.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\System.Web.Helpers.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\System.Web.Mvc.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\System.Web.Optimization.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\System.Web.Razor.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Deployment.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Razor.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\WebGrease.dll
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.AI.Web.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.AI.WindowsServer.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.ApplicationInsights.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\System.Web.Helpers.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\System.Web.Mvc.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\System.Web.Optimization.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\System.Web.Razor.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Deployment.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Razor.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Antlr3.Runtime.pdb
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Newtonsoft.Json.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\EntityFramework.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\EntityFramework.SqlServer.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Google.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.xml
+Z:\Programación\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+Z:\Programación\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csprojAssemblyReference.cache
+Z:\Programación\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CoreCompileInputs.cache
+Z:\Programación\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CopyComplete
+Z:\Programación\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.dll
+Z:\Programación\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.pdb
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csprojResolveAssemblyReference.cache
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.pdb
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\roslyn\csc.exe
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\roslyn\vbc.exe
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\roslyn\VBCSCompiler.exe
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\QuienEsQuien.dll.config
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\QuienEsQuien.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\QuienEsQuien.pdb
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Antlr3.Runtime.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\EntityFramework.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\EntityFramework.SqlServer.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.AI.Web.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Newtonsoft.Json.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Owin.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\System.Web.Helpers.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\System.Web.Mvc.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\System.Web.Optimization.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\System.Web.Razor.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Razor.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\WebGrease.dll
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.AI.Web.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\System.Web.Helpers.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\System.Web.Mvc.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\System.Web.Optimization.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\System.Web.Razor.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Razor.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Antlr3.Runtime.pdb
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Newtonsoft.Json.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\EntityFramework.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\EntityFramework.SqlServer.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Tomy\Desktop\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csprojAssemblyReference.cache
+D:\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CoreCompileInputs.cache
+D:\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.dll
+D:\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.pdb
+D:\Who-is-who\QuienEsQuien\bin\roslyn\csc.exe
+D:\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Who-is-who\QuienEsQuien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Who-is-who\QuienEsQuien\bin\roslyn\System.Collections.Immutable.dll
+D:\Who-is-who\QuienEsQuien\bin\roslyn\System.Reflection.Metadata.dll
+D:\Who-is-who\QuienEsQuien\bin\roslyn\vbc.exe
+D:\Who-is-who\QuienEsQuien\bin\roslyn\VBCSCompiler.exe
+D:\Who-is-who\QuienEsQuien\bin\roslyn\VBCSCompiler.exe.config
+D:\Who-is-who\QuienEsQuien\bin\QuienEsQuien.dll.config
+D:\Who-is-who\QuienEsQuien\bin\QuienEsQuien.dll
+D:\Who-is-who\QuienEsQuien\bin\QuienEsQuien.pdb
+D:\Who-is-who\QuienEsQuien\bin\Antlr3.Runtime.dll
+D:\Who-is-who\QuienEsQuien\bin\EntityFramework.dll
+D:\Who-is-who\QuienEsQuien\bin\EntityFramework.SqlServer.dll
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.dll
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.AI.Web.dll
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.AI.WindowsServer.dll
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.ApplicationInsights.dll
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.dll
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.dll
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Google.dll
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.Web.Infrastructure.dll
+D:\Who-is-who\QuienEsQuien\bin\Newtonsoft.Json.dll
+D:\Who-is-who\QuienEsQuien\bin\Owin.dll
+D:\Who-is-who\QuienEsQuien\bin\System.Web.Helpers.dll
+D:\Who-is-who\QuienEsQuien\bin\System.Web.Mvc.dll
+D:\Who-is-who\QuienEsQuien\bin\System.Web.Optimization.dll
+D:\Who-is-who\QuienEsQuien\bin\System.Web.Razor.dll
+D:\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Deployment.dll
+D:\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.dll
+D:\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Razor.dll
+D:\Who-is-who\QuienEsQuien\bin\WebGrease.dll
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.xml
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.AI.Web.xml
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.AI.WindowsServer.xml
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.ApplicationInsights.xml
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Who-is-who\QuienEsQuien\bin\System.Web.Helpers.xml
+D:\Who-is-who\QuienEsQuien\bin\System.Web.Mvc.xml
+D:\Who-is-who\QuienEsQuien\bin\System.Web.Optimization.xml
+D:\Who-is-who\QuienEsQuien\bin\System.Web.Razor.xml
+D:\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.xml
+D:\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Deployment.xml
+D:\Who-is-who\QuienEsQuien\bin\System.Web.WebPages.Razor.xml
+D:\Who-is-who\QuienEsQuien\bin\Antlr3.Runtime.pdb
+D:\Who-is-who\QuienEsQuien\bin\Newtonsoft.Json.xml
+D:\Who-is-who\QuienEsQuien\bin\EntityFramework.xml
+D:\Who-is-who\QuienEsQuien\bin\EntityFramework.SqlServer.xml
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.xml
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.xml
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Google.xml
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Who-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Who-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CopyComplete
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csprojAssemblyReference.cache
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CoreCompileInputs.cache
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.pdb
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\roslyn\csc.exe
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\roslyn\vbc.exe
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\roslyn\VBCSCompiler.exe
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\QuienEsQuien.dll.config
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\QuienEsQuien.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\QuienEsQuien.pdb
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Antlr3.Runtime.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\EntityFramework.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\EntityFramework.SqlServer.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.AI.Web.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Newtonsoft.Json.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Owin.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\System.Web.Helpers.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\System.Web.Mvc.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\System.Web.Optimization.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\System.Web.Razor.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\System.Web.WebPages.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\System.Web.WebPages.Razor.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\WebGrease.dll
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.AI.Web.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\System.Web.Helpers.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\System.Web.Mvc.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\System.Web.Optimization.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\System.Web.Razor.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\System.Web.WebPages.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\System.Web.WebPages.Razor.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Antlr3.Runtime.pdb
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Newtonsoft.Json.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\EntityFramework.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\EntityFramework.SqlServer.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Mariano\Desktop\ORT\Programacion\AWho-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CopyComplete
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\roslyn\csc.exe
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\roslyn\Microsoft.CSharp.Core.targets
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\roslyn\Microsoft.VisualBasic.Core.targets
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\roslyn\System.Collections.Immutable.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\roslyn\System.Reflection.Metadata.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\roslyn\vbc.exe
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\roslyn\VBCSCompiler.exe
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\roslyn\VBCSCompiler.exe.config
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\QuienEsQuien.dll.config
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\QuienEsQuien.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\QuienEsQuien.pdb
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Antlr3.Runtime.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\EntityFramework.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\EntityFramework.SqlServer.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.AI.Agent.Intercept.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.AI.PerfCounterCollector.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.AI.Web.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.AI.WindowsServer.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.ApplicationInsights.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Google.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.Web.Infrastructure.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Newtonsoft.Json.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Owin.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\System.Web.Helpers.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\System.Web.Mvc.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\System.Web.Optimization.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\System.Web.Razor.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\System.Web.WebPages.Deployment.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\System.Web.WebPages.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\System.Web.WebPages.Razor.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\WebGrease.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.AI.DependencyCollector.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.AI.ServerTelemetryChannel.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.AI.Web.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.AI.WindowsServer.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.ApplicationInsights.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\System.Web.Helpers.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\System.Web.Mvc.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\System.Web.Optimization.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\System.Web.Razor.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\System.Web.WebPages.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\System.Web.WebPages.Deployment.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\System.Web.WebPages.Razor.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Antlr3.Runtime.pdb
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Newtonsoft.Json.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\EntityFramework.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\EntityFramework.SqlServer.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Core.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.Owin.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Host.SystemWeb.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Facebook.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Cookies.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Google.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csprojAssemblyReference.cache
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CoreCompileInputs.cache
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CopyComplete
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.dll
+Z:\Programación\20.11\AWho-is-who\QuienEsQuien\obj\Debug\QuienEsQuien.pdb

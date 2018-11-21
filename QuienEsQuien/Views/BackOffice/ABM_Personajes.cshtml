@@ -10,35 +10,24 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="~/Content/Cosa.css" rel="stylesheet" />
-    <style>
-        table, td, th {
-            border: 1px solid white;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 750px;
-        }
-
-        th {
-            height: 50px;
-        }
-
-        .Centrado {
-            text-align: center;
-        }
-    </style>
+    <link href="~/Styles/Tables.css" rel="stylesheet" />
 </head>
 <body class="w3-black">
     <div class="w3-padding-large" id="main">
 
-        <h2>ABM_Personajes</h2>
-
-        <h2>ABM</h2>
-        <p>@ViewBag.BajaPersonaje</p>
+        <center><h2>ABM Personajes</h2></center>
+        <br />
+        <p>@ViewBag.BajaPersonaje</p> 
         <h3>@Html.ActionLink("Ingresar Personaje", "EdicionPersonaje", "BackOffice", new { Accion = "Insertar" }, null);</h3>
 
         <table align="center" bordercolor="Black" width="350px">
+            <tr style="background-color:#222222">
+                <td><center><h2><b>Imagen</b></h2></center></td>
+                <td><center><h2><b>Nombre</b></h2></center></td>
+                <td><center><h2><b>Modificar</b></h2></center></td>
+                <td><center><h2><b>Eliminar</b></h2></center></td>
+                <td><center><h2><b>Ver</b></h2></center></td>
+            </tr>
             @foreach (Personajes MiPersonaje in ViewBag.Lista)
             {
 
@@ -47,7 +36,7 @@
                     <img src="~/Content/@MiPersonaje.Imagen" alt="Foto Personaje" class="img-rounded"
                          style="width: 100px;
                                  height: 100px;
-                    "/>
+                    " />
                 </td>
                 <td>
                     <h3><b>@MiPersonaje.Nombre</b></h3>
@@ -62,7 +51,7 @@
                     <h3> @Html.ActionLink("E", "EdicionPersonaje", "BackOffice", new { Accion = "Eliminar", ID = MiPersonaje.IdPersonaje }, null)</h3>
                 </td>
                 <td class="Centrado">
-                    <h3> @Html.ActionLink("P", "EdicionPersonaje", "BackOffice", new { Accion = "Eliminar", ID = MiPersonaje.IdPersonaje }, null)</h3>
+                    <h3> @Html.ActionLink("P", "Personajes_Pregunta", "BackOffice", new { ID = MiPersonaje.IdPersonaje, Nombre = MiPersonaje.Nombre }, null)</h3>
                 </td>
 
             </tr>

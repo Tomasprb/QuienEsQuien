@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Perfil";
 }
 
@@ -13,6 +12,23 @@
 </head>
 <body class="w3-black">
     <div class="w3-padding-large" id="main">
-        <h2>Perfil</h2>
+        <center><h1>Perfil</h1></center>
+        <h3>Datos de de perfil:</h3> <br />
+        <ul>
+            <li>Nombre: @ViewBag.Usuario.Nombre</li>
+            <li>Bitcoins actuales: @ViewBag.Usuario.Bitcoins</li>
+            <li>Bitcoins máximos: @ViewBag.Usuario.MaxBitcoins</li>
+            <li>Partidas jugadas: @ViewBag.Usuario.PartidasJugadas</li>
+            <li>Partidas ganadas: @ViewBag.Usuario.PartidasGanadas</li>
+            <li>Partidas perdidas: @(ViewBag.Usuario.PartidasJugadas - ViewBag.Usuario.PartidasGanadas)</li>
+            @if (ViewBag.Usuario.PartidasJugadas == 0)
+            {
+                <li>Porcentaje de partidas ganadas: 0%</li>
+            }
+            else
+            {
+                <li>Porcentaje de partidas ganadas: @((ViewBag.Usuario.PartidasGanadas * 100) / ViewBag.Usuario.PartidasJugadas)%</li>
+            }
+        </ul>
     </div>
 </body>

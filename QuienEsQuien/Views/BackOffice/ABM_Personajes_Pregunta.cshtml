@@ -10,60 +10,55 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="~/Content/Cosa.css" rel="stylesheet" />
-    <style>
-        table, td, th {
-            border: 1px solid white;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 750px;
-        }
-
-        th {
-            height: 50px;
-        }
-
-        .Centrado {
-            text-align: center;
-        }
-    </style>
+    <link href="~/Styles/Tables.css" rel="stylesheet" />
 </head>
 <body class="w3-black">
     <div class="w3-padding-large" id="main">
-
-        <h2>ABM_Personajes_Pregunta</h2>
-
-        <h2>ABM</h2>
-        <p>@ViewBag.BajaPersonaje</p>
-        <h3>@Html.ActionLink("Ingresar Personaje", "EdicionPersonajes", "BackOffice", new { Accion = "Insertar" }, null);</h3>
-
-        <table align="center" bordercolor="Black" width="350px">
-            @foreach (Personajes MiPersonaje in ViewBag.Lista)
-            {
-
-                <tr>
-                    <td>
-                        <img src="~/Content/@MiPersonaje.Imagen" alt="Foto Personaje" class="img-rounded" />
-                    </td>
-                    <td>
-                        <h3><b>@MiPersonaje.Nombre</b></h3>
-                    </td>
-                    <td class="Centrado">
-                        <h3> @Html.ActionLink("M", "EdicionPersonaje", "BackOffice", new { Accion = "Modificar", ID = MiPersonaje.IdPersonaje }, null)</h3>
-                    </td>
-                    <td class="Centrado">
-                        <h3> @Html.ActionLink("V", "EdicionPersonaje", "BackOffice", new { Accion = "Ver", ID = MiPersonaje.IdPersonaje }, null)</h3>
-                    </td>
-                    <td class="Centrado">
-                        <h3> @Html.ActionLink("E", "EdicionPersonaje", "BackOffice", new { Accion = "Eliminar", ID = MiPersonaje.IdPersonaje }, null)</h3>
-                    </td>
-                    <td class="Centrado">
-                        <h3> @Html.ActionLink("P", "EdicionPersonaje", "BackOffice", new { Accion = "Eliminar", ID = MiPersonaje.IdPersonaje }, null)</h3>
-                    </td>
-
+        @using (Html.BeginForm("EdicionPersonaje_Pregunta", "BackOffice", FormMethod.Post, new { enctype = "multipart/from-data" }))
+            <center><h2>@ViewBag.NombrePersonaje</h2></center><br />
+            <table align="center" bordercolor="Black" width="350 px">
+                <tr style="background-color:#222222">
+                    <td><center><h2><b>Personaje</b></h2></center></td>
+                    <td><center><h2><b>Pregunta</b></h2></center></td>
+                    <td><center><h2><b>Modificar</b></h2></center></td>
+                    <td><center><h2><b>Eliminar</b></h2></center></td>
+                    <td><center><h2><b>Ver</b></h2></center></td>
                 </tr>
-            }
-        </table>
-    </div>
-</body>
+                @foreach (Preguntas MiPreg in ViewBag.ListaPreguntas)
+            {
+                bool v = false;
+                    @foreach (Preguntas P in ViewBag.ListaPregsPersonaje)
+                {
+                    if (MiPreg.IdPregunta == P.IdPregunta)
+                    {
+                            <tr>
+                                <td class="Centrado">
+                                    <h3>@P.Texto</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="Centrado">
+                                    <input type="checkbox" name="Box" value=@P.IdPregunta checked="checked" /> <br />
+                                </td>
+                            </tr>
+                        }
+                        if (v == false)
+                        {
+                            <tr>
+                                <td class="Centrado">
+                                    <h3>@MiPreg.Texto</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="Centrado">
+                                    <input type="checkbox" name="Box" value=@MiPreg.IdPregunta /> <br />
+                                </td>
+                            </tr>
+                        }
+                    }
+                }
+            </table>
+            <input type="hidden" name="Id" value=@Model.IdPregunta><br />
+            <input type="submit" value="finalizar" />
+        </div>
+    </body>

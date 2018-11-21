@@ -12,22 +12,27 @@ namespace QuienEsQuien.Models
         private string _Contraseña;
         private double _Puntaje;
         private bool _Admin;
+        private int _Bitcoins;
+        private int _MaxBitcoins;
+        private int _PartidasJugadas;
+        private int _PartidasGanadas;
 
-        public Usuarios(int _IdUsuario, string _Nombre, string _Contraseña, double _Puntaje, bool _Admin)
+        public Usuarios(int _IdUsuario, string _Nombre, string _Contraseña, double _Puntaje, bool _Admin, int _Bitcoins, int _MaxBitcoins, int _PartidasJugadas, int _PartidasGanadas)
         {
             this._IdUsuario = _IdUsuario;
             this._Nombre = _Nombre;
             this._Contraseña = _Contraseña;
             this._Puntaje = _Puntaje;
             this._Admin = _Admin;
+            this._Bitcoins = _Bitcoins;
+            this._MaxBitcoins = _MaxBitcoins;
+            this._PartidasJugadas = _PartidasJugadas;
+            this._PartidasGanadas = _PartidasGanadas;
         }
+
         public Usuarios()
         {
-            IdUsuario = _IdUsuario;
-            Nombre = _Nombre;
-            Contraseña = _Contraseña;
-            Puntaje = _Puntaje;
-            Admin = _Admin;
+
         }
         
         public int IdUsuario
@@ -92,6 +97,58 @@ namespace QuienEsQuien.Models
             set
             {
                 _Admin = value;
+            }
+        }
+
+        public int Bitcoins
+        {
+            get
+            {
+                return _Bitcoins;
+            }
+
+            set
+            {
+                _Bitcoins = value;
+            }
+        }
+
+        public int MaxBitcoins
+        {
+            get
+            {
+                return _MaxBitcoins;
+            }
+
+            set
+            {
+                _MaxBitcoins = value;
+            }
+        }
+
+        public int PartidasJugadas
+        {
+            get
+            {
+                return _PartidasJugadas;
+            }
+
+            set
+            {
+                _PartidasJugadas = value;
+            }
+        }
+
+        public int PartidasGanadas
+        {
+            get
+            {
+                return _PartidasGanadas;
+            }
+
+            set
+            {
+                _PartidasGanadas = value;
             }
         }
     }

@@ -1,0 +1,20 @@
+﻿table, td, th {
+    border: 1px solid white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 750px;
+}
+
+th {
+    height: 50px;
+}
+
+.Centrado {
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #222222;
+}

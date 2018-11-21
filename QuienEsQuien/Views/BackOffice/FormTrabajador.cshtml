@@ -16,9 +16,10 @@
 </head>
 <body class="w3-black">
     <div class="w3-padding-large" id="main">
-        <h2>Edite Las casillas a su gusto </h2>
+        <center><h2>@ViewBag.Accion</h2></center> <br />
         @using (Html.BeginForm("CosasATrabajador", "BackOffice", FormMethod.Post))
         {
+        <p>@ViewBag.Baja</p>
             if (ViewBag.Accion == "Ver")
             {
                 <pr>Nombre: </pr> @Html.TextBoxFor(x => x.Nombre, new { disabled = "disabled" }) <br /> <br />
@@ -26,12 +27,12 @@
             }
             else
             {
-                <pr>Nombre: </pr> @Html.TextBoxFor(x => x.Nombre) <br /> <br />
+                <pr>Nombre: </pr> @Html.TextBoxFor(x => x.Nombre, new { type = "text",  required = "required" }) <br /> <br />
 
             }
             <input type="hidden" name="Accion" value=@ViewBag.Accion>
             <input type="hidden" name="Id" value=@ViewBag.Id>
-            <input type="submit" value="Enviar" />
+            <button class="button black">Siguiente</button>
         }
     </div>
 </body>

@@ -1,4 +1,4 @@
-﻿
+﻿@using QuienEsQuien.Models
 @{
     ViewBag.Title = "Index";
 }
@@ -10,9 +10,31 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="~/Content/Cosa.css" rel="stylesheet" />
+    <link href="~/Styles/Buttons.css" rel="stylesheet" />
 </head>
 <body class="w3-black">
     <div class="w3-padding-large" id="main">
-        <h2>El juego no se ha creado todavia</h2>
+        <center><h1>Juego</h1></center>
+        @using (Html.BeginForm("Mostrar_personajes", "Game", FormMethod.Post))
+        {
+            <h3>Elija una categoría con la cual jugar</h3>
+            if (ViewBag.Error == null)
+            {
+                <br />
+            }
+            else
+            {
+                <p style="color:red">@ViewBag.Error</p>
+            }
+            <select name="tCate" style="width:135px;height:28px">
+                <option selected value="-1">Categorías:</option>
+                @foreach (Categorias x in ViewBag.Categorias)
+                {
+                    <option value="@x.IdCategoria">@x.Nombre</option>
+                }
+            </select>
+            <br /> <br />
+            <button class="button black" style="margin-left:25px">Siguiente</button>
+        }
     </div>
 </body>

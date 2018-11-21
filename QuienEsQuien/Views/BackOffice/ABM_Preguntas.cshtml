@@ -1,6 +1,6 @@
 ﻿@using QuienEsQuien.Models
 @{
-    ViewBag.Title = "ABM_Preguntas";
+    ViewBag.Title = "ABM Preguntas";
 }
 <head>
     <link href="~/Styles/Estilos1.css" rel="stylesheet" />
@@ -10,40 +10,31 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="~/Content/Cosa.css" rel="stylesheet" />
-    <style>
-        table, td, th {
-            border: 1px solid white;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 750px;
-        }
-
-        th {
-            height: 50px;
-        }
-
-        .Centrado {
-            text-align: center;
-        }
-    </style>
+    <link href="~/Styles/Tables.css" rel="stylesheet" />
 </head>
 <body class="w3-black">
     <div class="w3-padding-large" id="main">
 
-        <h2>ABM_Preguntas</h2>
-
-        <h2>ABM</h2>
-        <p>@ViewBag.BajaPreguntas</p>
-        <h3>@Html.ActionLink("Ingresar Pregunta", "Edicion Pregunta", "BackOffice", new { Accion = "Insertar" }, null)</h3>
-
-        <table align="center" bordercolor="Black" >
+        <center><h2>ABM Preguntas</h2></center>
+        <p>@ViewBag.BajaPreguntas</p> <br />
+        <h3>@Html.ActionLink("Ingresar Pregunta", "EdicionPregunta", "BackOffice", new { Accion = "Insertar" }, null)</h3>
+        @if (ViewBag.Error == null)
+        {
+            <br />
+        }
+        <h5 style="color:red">@ViewBag.Error</h5>
+        <table align="center" bordercolor="Black">
+            <tr style="background-color:#222222">
+                <td><center><h2><b>Pregunta</b></h2></center></td>
+                <td><center><h2><b>Modificar</b></h2></center></td>
+                <td><center><h2><b>Eliminar</b></h2></center></td>
+                <td><center><h2><b>Ver</b></h2></center></td>
+            </tr>
             @foreach (Preguntas MiPregunta in ViewBag.Lista)
             {
                 <tr>
                     <td>
-                        <h3><b>@MiPregunta.Texto</b></h3>
+                        <h3 style="margin-left:10px"><b>@MiPregunta.Texto</b></h3>
                     </td>
                     <td class="Centrado">
                         <h3> @Html.ActionLink("M", "EdicionPregunta", "BackOffice", new { Accion = "Modificar", ID = MiPregunta.IdPregunta }, null)</h3>
