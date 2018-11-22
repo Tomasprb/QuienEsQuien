@@ -76,7 +76,6 @@ Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.OAuth.xml
 Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Google.xml
 Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.Twitter.xml
 Z:\QuienEsQuien\QuienEsQuien\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-Z:\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.csprojResolveAssemblyReference.cache
 Z:\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.dll
 Z:\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.pdb
 Z:\Programacion\APPS\QuienEsQuien\QuienEsQuien\bin\roslyn\csc.exe
@@ -1486,3 +1485,6 @@ Z:\Programación\AQuienEsQuien\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.
 Z:\Programación\AQuienEsQuien\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CopyComplete
 Z:\Programación\AQuienEsQuien\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.dll
 Z:\Programación\AQuienEsQuien\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.pdb
+Z:\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.csprojAssemblyReference.cache
+Z:\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CoreCompileInputs.cache
+Z:\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CopyComplete
