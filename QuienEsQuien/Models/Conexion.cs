@@ -10,9 +10,9 @@ namespace QuienesQuien.Models
 {
     public class Conexion
     {
-        private static string SC = "Server=10.128.8.16;Database=QEQB07;User Id=QEQB07;Password=QEQB07;";
+        //private static string SC = "Server=10.128.8.16;Database=QEQB07;User Id=QEQB07;Password=QEQB07;";
 
-        //private static string SC = "Server=LAPTOP-BT997U35\\SQLEXPRESS;Database=QEQnew;User Id=ORT;Password=ort;";
+        private static string SC = "Server=LAPTOP-BT997U35\\SQLEXPRESS;Database=QuienEsQuien;User Id=ORT;Password=ort;";
 
 
 
@@ -551,10 +551,11 @@ namespace QuienesQuien.Models
             SqlDataReader dataReader = consulta.ExecuteReader();
             while (dataReader.Read())
             {
+                int id = Convert.ToInt32(dataReader["IdUser"]);
                 string nom = (dataReader["Nombre"].ToString());
                 int bit = Convert.ToInt32(dataReader["Bitcoins"]);
 
-                Ranking R = new Ranking(nom, bit);
+                Ranking R = new Ranking(id, nom, bit);
                 lista.Add(R);
             }
 

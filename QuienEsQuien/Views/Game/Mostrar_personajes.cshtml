@@ -17,57 +17,55 @@
     <div class="w3-padding-large" id="main">
         @using (Html.BeginForm("Preguntas", "Game", FormMethod.Post))
         {
-            <center><h2>Elegi tu personaje</h2></center>
+            <center><h2>Personajes</h2></center>
             <br />
-
-
-            <table align="center" bordercolor="Black" width="350px">
+            if (ViewBag.Arriesgar != null)
+            {
+                <center><h3>Hace click sobre la imágen de un personaje para arriesgar</h3></center>
+                <br />
+            }
+            else
+            {
+                <center><button class="button black">Siguiente</button></center>
+                <br />
+                <br />
+            }
+            <table align="center" bordercolor="Black" style="width:100%">
                 <tr style="background-color:#222222">
                     <td><center><h2><b>Imagen</b></h2></center></td>
                     <td><center><h2><b>Nombre</b></h2></center></td>
-                    @*<td><center><h2>Elegi<b></b></h2></center></td>*@
 
                 </tr>
                 @{
-                    List<Personajes> Lista = (List<Personajes>) Session["ListaPersonajes"];
+                    List<Personajes> Lista = (List<Personajes>)Session["ListaPersonajes"];
                     foreach (Personajes MiPersonaje in Lista)
                     {
-
-                        <tr>
+                        <tr class="Centrado">
                             <td>
-                                <img src="~/Content/@MiPersonaje.Imagen" alt="Foto Personaje" class="img-rounded"
-                                     style="width: 100px;
-                                 height: 100px;
-                    " />
-<<<<<<< HEAD
-                        </td>
-                        <td>
-                            <h3><b>@MiPersonaje.Nombre</b></h3>
-                        </td>
-                        <td class="Centrado">
-                            <h3> @Html.ActionLink("¿Soy este?", "Preguntas", "GameController", new { Accion = "Modificar", ID = MiPersonaje.IdPersonaje, onclick = "javascript:return false;" }, null)</h3>
-                        </td>
-=======
+                                @if (ViewBag.Arriesgar != null)
+                                {
+                                    <button class="button black" name="Personaje" value="@MiPersonaje.IdPersonaje">
+                                        <img src="~/Content/@MiPersonaje.Imagen" alt="Foto Personaje" class="img-rounded"
+                                             style="width: 100px;
+                                             height: 100px" />
+                                    </button>
+                                }
+                                else
+                                {
+                                    <img src="~/Content/@MiPersonaje.Imagen" alt="Foto Personaje" class="img-rounded"
+                                         style="width: 100px;
+                                         height: 100px" />
+                                }
                             </td>
                             <td>
                                 <h3><b>@MiPersonaje.Nombre</b></h3>
                             </td>
->>>>>>> a1d9d50eb55682d3d96a5ec9fe6546a90e6b0e18
-
-                            @if (ViewBag.Final == true)
-                            {
-                                <td class="Centrado">
-                                    <h3> @Html.ActionLink("¿Soy este?", "Preguntas", "Game", new { Accion = "Modificar", ID = MiPersonaje.IdPersonaje }, null)</h3>
-                                </td>
-                            }
-
                         </tr>
                     }
 
                 }
             </table>
-            <button class="button black">Siguiente</button>
-            <input type="hidden" value="@ViewBag.Categoria" name="tCate"/>
+            <input type="hidden" value="@ViewBag.Categoria" name="tCate" />
         }
     </div>
 </body>

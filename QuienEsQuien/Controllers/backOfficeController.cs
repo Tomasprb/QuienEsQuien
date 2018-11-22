@@ -387,7 +387,6 @@ namespace QuienEsQuien.Controllers
         {
             if (Convert.ToBoolean(Session["AdminNow"]) == true)
             {
-                bool x = true;
                 Conexion MiConexion1 = new Conexion();
                 ViewBag.Accion = Accion;
                 List<Categorias> listaCategorias = new List<Categorias>();

@@ -117,17 +117,17 @@ namespace QuienesQuien.Controllers
             return View("Index");
         }
 
-        public ActionResult Perfil()
+        public ActionResult Perfil(string user)
         {
-            if (Session["NombreNow"] != null)
+            if (user != null)
             {
-                ViewBag.Usuario = bd.ObtenerUsuario(Session["NombreNow"].ToString());
-                return View();
+                ViewBag.Usuario = bd.ObtenerUsuario(user);
             }
             else
             {
-                return View("LoginParcial");
+                ViewBag.Usuario = bd.ObtenerUsuario(Session["NombreNow"].ToString());
             }
+            return View();
         }
     }
 }
