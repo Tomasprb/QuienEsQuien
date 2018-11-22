@@ -1,6 +1,6 @@
 ﻿@using QuienEsQuien.Models
 @{
-    ViewBag.Title = "ABM_Personajes_Pregunta";
+    ViewBag.Title = "Carga Respuestas";
 }
 <head>
     <link href="~/Styles/Estilos1.css" rel="stylesheet" />
@@ -15,50 +15,20 @@
 <body class="w3-black">
     <div class="w3-padding-large" id="main">
         @using (Html.BeginForm("EdicionPersonaje_Pregunta", "BackOffice", FormMethod.Post, new { enctype = "multipart/from-data" }))
+        {
             <center><h2>@ViewBag.NombrePersonaje</h2></center><br />
-            <table align="center" bordercolor="Black" width="350 px">
-                <tr style="background-color:#222222">
-                    <td><center><h2><b>Personaje</b></h2></center></td>
-                    <td><center><h2><b>Pregunta</b></h2></center></td>
-                    <td><center><h2><b>Modificar</b></h2></center></td>
-                    <td><center><h2><b>Eliminar</b></h2></center></td>
-                    <td><center><h2><b>Ver</b></h2></center></td>
-                </tr>
-                @foreach (Preguntas MiPreg in ViewBag.ListaPreguntas)
+            foreach (Preguntas MiPreg in ViewBag.ListaPreguntas)
             {
-                bool v = false;
-                    @foreach (Preguntas P in ViewBag.ListaPregsPersonaje)
+                List<int> MiLista = ViewBag.ListaPregsPersonaje;
+                string chequeado = "";
+                if (MiLista.Contains(MiPreg.IdPregunta))
                 {
-                    if (MiPreg.IdPregunta == P.IdPregunta)
-                    {
-                            <tr>
-                                <td class="Centrado">
-                                    <h3>@P.Texto</h3>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="Centrado">
-                                    <input type="checkbox" name="Box" value=@P.IdPregunta checked="checked" /> <br />
-                                </td>
-                            </tr>
-                        }
-                        if (v == false)
-                        {
-                            <tr>
-                                <td class="Centrado">
-                                    <h3>@MiPreg.Texto</h3>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="Centrado">
-                                    <input type="checkbox" name="Box" value=@MiPreg.IdPregunta /> <br />
-                                </td>
-                            </tr>
-                        }
-                    }
+                    chequeado = "checked";
                 }
-            </table>
-            <input type="hidden" name="Id" value=@Model.IdPregunta><br />
-            <input type="submit" value="finalizar" />
-        </div>
-    </body>
+                <input type="checkbox" name="Box" value="@MiPreg.IdPregunta" @chequeado /> @MiPreg.Texto<br />
+    }
+            <input type="hidden" name="IdPersonaje" value="@ViewBag.IdPersonaje"/>
+    <input type="submit" value="finalizar" />
+    }
+</div>
+</body>

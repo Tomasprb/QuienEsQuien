@@ -25,18 +25,21 @@
                 <tr style="background-color:#222222">
                     <td><center><h2><b>Imagen</b></h2></center></td>
                     <td><center><h2><b>Nombre</b></h2></center></td>
-                    <td><center><h2>Elegi<b></b></h2></center></td>
+                    @*<td><center><h2>Elegi<b></b></h2></center></td>*@
 
                 </tr>
-                @foreach (Personajes MiPersonaje in ViewBag.Lista)
-                {
+                @{
+                    List<Personajes> Lista = (List<Personajes>) Session["ListaPersonajes"];
+                    foreach (Personajes MiPersonaje in Lista)
+                    {
 
-                    <tr>
-                        <td>
-                            <img src="~/Content/@MiPersonaje.Imagen" alt="Foto Personaje" class="img-rounded"
-                                 style="width: 100px;
+                        <tr>
+                            <td>
+                                <img src="~/Content/@MiPersonaje.Imagen" alt="Foto Personaje" class="img-rounded"
+                                     style="width: 100px;
                                  height: 100px;
                     " />
+<<<<<<< HEAD
                         </td>
                         <td>
                             <h3><b>@MiPersonaje.Nombre</b></h3>
@@ -44,9 +47,23 @@
                         <td class="Centrado">
                             <h3> @Html.ActionLink("¿Soy este?", "Preguntas", "GameController", new { Accion = "Modificar", ID = MiPersonaje.IdPersonaje, onclick = "javascript:return false;" }, null)</h3>
                         </td>
+=======
+                            </td>
+                            <td>
+                                <h3><b>@MiPersonaje.Nombre</b></h3>
+                            </td>
+>>>>>>> a1d9d50eb55682d3d96a5ec9fe6546a90e6b0e18
 
+                            @if (ViewBag.Final == true)
+                            {
+                                <td class="Centrado">
+                                    <h3> @Html.ActionLink("¿Soy este?", "Preguntas", "Game", new { Accion = "Modificar", ID = MiPersonaje.IdPersonaje }, null)</h3>
+                                </td>
+                            }
 
-                    </tr>
+                        </tr>
+                    }
+
                 }
             </table>
             <button class="button black">Siguiente</button>

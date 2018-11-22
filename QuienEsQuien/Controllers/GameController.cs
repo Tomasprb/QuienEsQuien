@@ -35,6 +35,15 @@ namespace QuienEsQuien.Controllers
                 int n = new Random().Next(1, Num);
                 MiPersonaje = MisPersonajes[n - 1];
                 Session["PersonajeAzar"] = MiPersonaje;
+<<<<<<< HEAD
+=======
+                List<Personajes> ListaPersonajes = new List<Personajes>();
+                Conexion MiConexion = new Conexion();
+                ListaPersonajes = MiConexion.PersonajesPorCategoria(tCate);
+                ViewBag.Lista = ListaPersonajes;
+                Session["ListaPersonajes"] = ListaPersonajes;
+
+>>>>>>> a1d9d50eb55682d3d96a5ec9fe6546a90e6b0e18
             }
             else
             {
@@ -46,6 +55,7 @@ namespace QuienEsQuien.Controllers
                 int n = new Random().Next(1, Num);
                 MiPersonaje2 = MisPersonajes1[n];
                 Session["PersonajeAzar"] = MiPersonaje2;
+<<<<<<< HEAD
             }
             if (tCate != 0)
             {
@@ -56,12 +66,25 @@ namespace QuienEsQuien.Controllers
             }
             else
             {
+=======
+>>>>>>> a1d9d50eb55682d3d96a5ec9fe6546a90e6b0e18
                 List<Personajes> ListaPersonajes = new List<Personajes>();
                 Conexion MiConexion = new Conexion();
                 ListaPersonajes = MiConexion.Personajes();
                 ViewBag.Lista = ListaPersonajes;
+                Session["ListaPersonajes"] = ListaPersonajes;
+
             }
+<<<<<<< HEAD
             ViewBag.Categoria = tCate;
+=======
+
+          
+
+
+
+
+>>>>>>> a1d9d50eb55682d3d96a5ec9fe6546a90e6b0e18
             return View();
         }
         public ActionResult Preguntas(int tCate)
