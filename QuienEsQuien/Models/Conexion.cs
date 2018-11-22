@@ -57,7 +57,7 @@ namespace QuienesQuien.Models
                 x.Admin = false;
                 x.Contraseña = "-1";
             }
-            
+
             Conexion.Close();
 
             return x;
@@ -499,10 +499,47 @@ namespace QuienesQuien.Models
             Desconectar(conexion);
             return ListaPersonjaes;
         }
+        public List<Preguntas> ListarPreguntasCate(int tCate)
+        {
+            List<Preguntas> lista = new List<Preguntas>();
+            SqlConnection conexion = Conectar();
+            SqlCommand consulta = conexion.CreateCommand();
+            consulta.CommandText = "sp_ListarPreguntasCate";
+            consulta.CommandType = System.Data.CommandType.StoredProcedure;
+            consulta.Parameters.AddWithValue("@pID", tCate);
+            SqlDataReader dataReader = consulta.ExecuteReader();
+            while (dataReader.Read())
+            {
+                int IdPregunta = Convert.ToInt32(dataReader["IdPregunta"]);
+                string texto = (dataReader["Texto"].ToString());
+                int IdCategoria = Convert.ToInt32(dataReader["IdCategoria"]);
 
+                Preguntas P = new Preguntas(IdPregunta, texto, IdCategoria);
+                lista.Add(P);
+            }
 
+            Desconectar(conexion);
+            return lista;
+        }
+        public List<Ranking> ListarRanking()
+        {
+            List<Ranking> lista = new List<Ranking>();
+            SqlConnection conexion = Conectar();
+            SqlCommand consulta = conexion.CreateCommand();
+            consulta.CommandText = "sp_TraerRanking";
+            consulta.CommandType = System.Data.CommandType.StoredProcedure;
+            SqlDataReader dataReader = consulta.ExecuteReader();
+            while (dataReader.Read())
+            {
+                string nom = (dataReader["Nombre"].ToString());
+                int bit = Convert.ToInt32(dataReader["Bitcoins"]);
 
+                Ranking R = new Ranking(nom, bit);
+                lista.Add(R);
+            }
 
-
+            Desconectar(conexion);
+            return lista;
+        }
     }
 }

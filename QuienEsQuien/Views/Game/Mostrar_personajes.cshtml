@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="~/Content/Cosa.css" rel="stylesheet" />
     <link href="~/Styles/Tables.css" rel="stylesheet" />
+    <link href="~/Styles/Buttons.css" rel="stylesheet" />
 </head>
 <body class="w3-black">
     <div class="w3-padding-large" id="main">
-        @using (Html.BeginForm("Preguntas", "GameController", FormMethod.Post))
+        @using (Html.BeginForm("Preguntas", "Game", FormMethod.Post))
         {
             <center><h2>Elegi tu personaje</h2></center>
             <br />
@@ -41,7 +42,7 @@
                             <h3><b>@MiPersonaje.Nombre</b></h3>
                         </td>
                         <td class="Centrado">
-                            <h3> @Html.ActionLink("¿Soy este?", "Preguntas", "GameController", new { Accion = "Modificar", ID = MiPersonaje.IdPersonaje } new { onclick = "javascript:return false;" }, null)</h3>
+                            <h3> @Html.ActionLink("¿Soy este?", "Preguntas", "GameController", new { Accion = "Modificar", ID = MiPersonaje.IdPersonaje, onclick = "javascript:return false;" }, null)</h3>
                         </td>
 
 
@@ -49,7 +50,7 @@
                 }
             </table>
             <button class="button black">Siguiente</button>
+            <input type="hidden" value="@ViewBag.Categoria" name="tCate"/>
         }
     </div>
-        
-    </body>
+</body>

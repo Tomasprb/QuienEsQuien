@@ -7,42 +7,43 @@ namespace QuienEsQuien.Models
 {
     public class Ranking
     {
-        private int _IdUser;
-        private int _Puesto;
+        private string _User;
+        private int _Bitcoins;
 
-        public Ranking(int _IdUser, int _Puesto)
+        public Ranking(string User, int Bitcoins)
         {
-            this._IdUser = _IdUser;
-            this._Puesto = _Puesto;
+            _User = User;
+            _Bitcoins = Bitcoins;
         }
+
         public Ranking()
         {
-            IdUser = _IdUser;
-            Puesto = _Puesto;
+
         }
-        public int IdUser
+
+        public string User
         {
             get
             {
-                return _IdUser;
+                return _User;
             }
 
             set
             {
-                _IdUser = value;
+                _User = value;
             }
         }
 
-        public int Puesto
+        public int Bitcoins
         {
             get
             {
-                return _Puesto;
+                return _Bitcoins;
             }
 
             set
             {
-                _Puesto = value;
+                _Bitcoins = value;
             }
         }
     }

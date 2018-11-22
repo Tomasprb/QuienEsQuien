@@ -1,0 +1,32 @@
+﻿@using QuienEsQuien.Models
+@{
+    ViewBag.Title = "Acerca de nosotros";
+}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/Content/Cosa.css" rel="stylesheet" />
+    <link href="~/Styles/Tables.css" rel="stylesheet" />
+</head>
+<body class="w3-black">
+    <div class="w3-padding-large" id="main">
+        <center><h1>Ranking</h1></center>
+        <table style="width:100%">
+            <tr style="background-color:#222222">
+                <td><center><h2><b>Usuario</b></h2></center></td>
+                <td><center><h2><b>Bitcoins</b></h2></center></td>
+            </tr>
+            @foreach (Ranking x in ViewBag.Ranking)
+            {
+                <tr>
+                    <td class="Centrado">@x.User</td>
+                    <td class="Centrado">@x.Bitcoins</td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>

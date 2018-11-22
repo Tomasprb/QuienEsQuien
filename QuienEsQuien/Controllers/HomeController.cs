@@ -22,9 +22,9 @@ namespace QuienesQuien.Controllers
 
 
         [HttpGet]
-        public ActionResult Nosotros()
+        public ActionResult Ranking()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Ranking = bd.ListarRanking();
             return View();
         }
 

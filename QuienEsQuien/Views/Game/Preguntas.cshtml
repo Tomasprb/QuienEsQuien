@@ -29,14 +29,14 @@
         }
 
         function drop(ev) {
-            
+
             ev.preventDefault();
             var data = ev.dataTransfer.getData("text");
             if (ev.target.id == "drop") {
                 ev.target.id = "drop_lleno";
                 ev.target.appendChild(document.getElementById(data));
             }
-            
+
         }
     </script>
 </head>
@@ -58,9 +58,9 @@
         <br /> <br />
         <div style="position:fixed;top:12px;margin-left:50%">
             Arrastre una pregunta
-            <div class="drop Centrado" id="drop" name="Pregunta" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+            <div class="drop Centrado" id="drop" name="Pregunta" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <br />
+            <button class="button black" style="margin-left:59px">Siguiente</button>
         </div>
-        <br />
-        <button class="button black">Siguiente</button>
     </div>
 </body>

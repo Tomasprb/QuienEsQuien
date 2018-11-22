@@ -25,7 +25,6 @@ namespace QuienEsQuien.Controllers
                 ViewBag.Error = "Seleccione una categoría";
                 return View("Index");
             }
-
             if (tCate != 0)
             {
                 Personajes MiPersonaje = new Personajes();
@@ -36,7 +35,6 @@ namespace QuienEsQuien.Controllers
                 int n = new Random().Next(1, Num);
                 MiPersonaje = MisPersonajes[n - 1];
                 Session["PersonajeAzar"] = MiPersonaje;
-
             }
             else
             {
@@ -48,9 +46,7 @@ namespace QuienEsQuien.Controllers
                 int n = new Random().Next(1, Num);
                 MiPersonaje2 = MisPersonajes1[n];
                 Session["PersonajeAzar"] = MiPersonaje2;
-
             }
-
             if (tCate != 0)
             {
                 List<Personajes> ListaPersonajes = new List<Personajes>();
@@ -65,15 +61,12 @@ namespace QuienEsQuien.Controllers
                 ListaPersonajes = MiConexion.Personajes();
                 ViewBag.Lista = ListaPersonajes;
             }
-
-
-
-
+            ViewBag.Categoria = tCate;
             return View();
         }
-        public ActionResult Preguntas()
+        public ActionResult Preguntas(int tCate)
         {
-            ViewBag.Preguntas = BD.ListarPreguntas();
+            ViewBag.Preguntas = BD.ListarPreguntasCate(tCate);
             return View();
         }
     }
