@@ -27,5 +27,10 @@ namespace QuienEsQuien.Controllers
             }
             return View();
         }
+        public ActionResult Preguntas()
+        {
+            ViewBag.Preguntas = BD.ListarPreguntas();
+            return View();
+        }
     }
 }
