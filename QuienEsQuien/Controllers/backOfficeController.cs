@@ -313,29 +313,23 @@ namespace QuienEsQuien.Controllers
         {
             if (Convert.ToBoolean(Session["AdminNow"]) == true)
             {
-                int x = -1;
                 List<Personaje_pregunta> ListaPersonajes_Pregunta = new List<Personaje_pregunta>();
-                List<Personajes> ListaPersonajes = new List<Personajes>();
                 List<Preguntas> ListaPreguntas = new List<Preguntas>();
                 List<Preguntas> ListaPregsPersonaje = new List<Preguntas>();
                 Conexion MiConexion = new Conexion();
-
-                foreach (Personaje_pregunta MiPregPer in ListaPersonajes_Pregunta)
-                {
-                    x++;
-                    if (MiPregPer.IdPersonaje == ListaPersonajes_Pregunta[x].IdPersonaje)
-                    {
-                        ListaPregsPersonaje[x] = MiConexion.ObtenerPregunta(ListaPersonajes_Pregunta[x].IdPersonaje);
-                    }
-                }
-                ListaPersonajes = MiConexion.ListarPersonajes();
                 ListaPreguntas = MiConexion.ListarPreguntas();
                 ListaPersonajes_Pregunta = MiConexion.ListarPersonajes_Pregunta();
+                ListaPregsPersonaje = MiConexion.ListarPreguntasxPersonaje(ID);
+                List<int> ListaIdsPregPers = new List<int>();
+                foreach (Preguntas P in ListaPregsPersonaje)
+                {
+                    ListaIdsPregPers.Add(P.IdPregunta);
+                }
 
                 ViewBag.Lista = ListaPersonajes_Pregunta;
-                ViewBag.ListaPersonajes = ListaPersonajes;
+                ViewBag.IdPersonaje = ID;
                 ViewBag.ListaPreguntas = ListaPreguntas;
-                ViewBag.ListaPregsPersonaje = ListaPregsPersonaje;
+                ViewBag.ListaPregsPersonaje = ListaIdsPregPers;
                 ViewBag.NombrePersonaje = Nombre;
                 return View("ABM_Personajes_Pregunta");
 
@@ -346,26 +340,22 @@ namespace QuienEsQuien.Controllers
             }
         }
 
-        //recibe la lista de los id pregunta con sus respectivos checked y no cheked, si estan cheked
-        //con el id personaje que tambien recibimos, los isertamos y despues volvemos al abm 
-        //se hace un foreach y dentro se hace una condicion que si el checkbox esta chequedo 
-        //se hace la insercion con el idpregunta de la lista y el id personaje que llega solo como Id
-        public ActionResult EdicionPersonaje_Pregunta(int ID, List<int> x)
+
+        [HttpPost]
+        public ActionResult EdicionPersonaje_Pregunta(int[] Box,int IdPersonaje)
         {
             if (Convert.ToBoolean(Session["AdminNow"]) == true)
             {
                 Conexion MiConexion1 = new Conexion();
-                List<Preguntas> ListaPreguntas = new List<Preguntas>();
                 List<Preguntas> ListaPregsPersonaje = new List<Preguntas>();
-                List<Personaje_pregunta> ListaPersonajes_Pregunta = new List<Personaje_pregunta>();
-                ListaPreguntas = MiConexion1.ListarPreguntas();
-                ListaPersonajes_Pregunta = MiConexion1.ListarPersonajes_Pregunta();
-                ViewBag.ListaPersonajesPreguntas = ListaPersonajes_Pregunta;
-                ViewBag.ListaPreguntas = ListaPreguntas;
-                ViewBag.ListaPregsPersonaje = ListaPregsPersonaje;
-
-
-                return View("ABM_Personajes");
+                ListaPregsPersonaje = MiConexion1.ListarPreguntasxPersonaje(IdPersonaje);
+                    MiConexion1.EliminarPersonaje_Pregunta(IdPersonaje);
+                foreach (int i in Box)
+                {
+                    MiConexion1.InsertarPersonaje_Pregunta(IdPersonaje,i);
+                }
+             
+                return RedirectToAction("Personajes", "BackOffice");
             }
             else
             {
