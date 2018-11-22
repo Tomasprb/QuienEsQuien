@@ -25,6 +25,55 @@ namespace QuienEsQuien.Controllers
                 ViewBag.Error = "Seleccione una categoría";
                 return View("Index");
             }
+
+            if (tCate != 0)
+            {
+                Personajes MiPersonaje = new Personajes();
+                Conexion MiConexion2 = new Conexion();
+                List<Personajes> MisPersonajes = new List<Personajes>();
+                MisPersonajes = MiConexion2.PersonajesPorCategoria(tCate);
+                int Num = MisPersonajes.Count();
+                int n = new Random().Next(1, Num);
+                MiPersonaje = MisPersonajes[n - 1];
+                Session["PersonajeAzar"] = MiPersonaje;
+
+            }
+            else
+            {
+                Personajes MiPersonaje2 = new Personajes();
+                Conexion MiConexion3 = new Conexion();
+                List<Personajes> MisPersonajes1 = new List<Personajes>();
+                MisPersonajes1 = MiConexion3.Personajes();
+                int Num = MisPersonajes1.Count();
+                int n = new Random().Next(1, Num);
+                MiPersonaje2 = MisPersonajes1[n];
+                Session["PersonajeAzar"] = MiPersonaje2;
+
+            }
+
+            if (tCate != 0)
+            {
+                List<Personajes> ListaPersonajes = new List<Personajes>();
+                Conexion MiConexion = new Conexion();
+                ListaPersonajes = MiConexion.PersonajesPorCategoria(tCate);
+                ViewBag.Lista = ListaPersonajes;
+            }
+            else
+            {
+                List<Personajes> ListaPersonajes = new List<Personajes>();
+                Conexion MiConexion = new Conexion();
+                ListaPersonajes = MiConexion.Personajes();
+                ViewBag.Lista = ListaPersonajes;
+            }
+
+
+
+
+            return View();
+        }
+        public ActionResult Preguntas()
+        {
+            ViewBag.Preguntas = BD.ListarPreguntas();
             return View();
         }
     }

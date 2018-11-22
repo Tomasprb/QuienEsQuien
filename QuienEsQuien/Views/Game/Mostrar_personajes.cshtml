@@ -1,0 +1,55 @@
+﻿@using QuienEsQuien.Models
+@{
+    ViewBag.Title = "Mostrar Personajes";
+}
+<head>
+    <link href="~/Styles/Estilos1.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/Content/Cosa.css" rel="stylesheet" />
+    <link href="~/Styles/Tables.css" rel="stylesheet" />
+</head>
+<body class="w3-black">
+    <div class="w3-padding-large" id="main">
+        @using (Html.BeginForm("Preguntas", "GameController", FormMethod.Post))
+        {
+            <center><h2>Elegi tu personaje</h2></center>
+            <br />
+
+
+            <table align="center" bordercolor="Black" width="350px">
+                <tr style="background-color:#222222">
+                    <td><center><h2><b>Imagen</b></h2></center></td>
+                    <td><center><h2><b>Nombre</b></h2></center></td>
+                    <td><center><h2>Elegi<b></b></h2></center></td>
+
+                </tr>
+                @foreach (Personajes MiPersonaje in ViewBag.Lista)
+                {
+
+                    <tr>
+                        <td>
+                            <img src="~/Content/@MiPersonaje.Imagen" alt="Foto Personaje" class="img-rounded"
+                                 style="width: 100px;
+                                 height: 100px;
+                    " />
+                        </td>
+                        <td>
+                            <h3><b>@MiPersonaje.Nombre</b></h3>
+                        </td>
+                        <td class="Centrado">
+                            <h3> @Html.ActionLink("¿Soy este?", "Preguntas", "GameController", new { Accion = "Modificar", ID = MiPersonaje.IdPersonaje } new { onclick = "javascript:return false;" }, null)</h3>
+                        </td>
+
+
+                    </tr>
+                }
+            </table>
+            <button class="button black">Siguiente</button>
+        }
+    </div>
+        
+    </body>

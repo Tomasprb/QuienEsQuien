@@ -474,5 +474,55 @@ namespace QuienesQuien.Models
             Desconectar(conexion);
             return x;
         }
+        public List<Personajes> PersonajesPorCategoria(int IdCategoria)
+        {
+            List<Personajes> ListaPersonjaes = new List<Personajes>();
+            SqlConnection conexion = Conectar();
+            SqlCommand consulta = conexion.CreateCommand();
+            consulta.CommandText = "sp_PersonajesPorCategoria";
+            consulta.CommandType = System.Data.CommandType.StoredProcedure;
+            consulta.Parameters.AddWithValue("@pID", IdCategoria);
+            SqlDataReader dataReader = consulta.ExecuteReader();
+            while (dataReader.Read())
+            {
+                int IdPersonaje = Convert.ToInt32(dataReader["IdPersonajes"]);
+                string NombrePer = (dataReader["Nombre_personaje"].ToString());
+                string Imagen = (dataReader["Imagen"].ToString());
+                int IdCategorias = Convert.ToInt32(dataReader["IdCategoria"]);
+                Personajes P = new Personajes(IdPersonaje, NombrePer, Imagen, IdCategorias);
+                ListaPersonjaes.Add(P);
+
+            }
+
+            Desconectar(conexion);
+            return ListaPersonjaes;
+        }
+        public List<Personajes> Personajes()
+        {
+            List<Personajes> ListaPersonjaes = new List<Personajes>();
+            SqlConnection conexion = Conectar();
+            SqlCommand consulta = conexion.CreateCommand();
+            consulta.CommandText = "sp_PersonajesPorCategoria";
+            consulta.CommandType = System.Data.CommandType.StoredProcedure;
+            SqlDataReader dataReader = consulta.ExecuteReader();
+            while (dataReader.Read())
+            {
+                int IdPersonaje = Convert.ToInt32(dataReader["IdPersonajes"]);
+                string NombrePer = (dataReader["Nombre_personaje"].ToString());
+                string Imagen = (dataReader["Imagen"].ToString());
+                int IdCategorias = Convert.ToInt32(dataReader["IdCategoria"]);
+                Personajes P = new Personajes(IdPersonaje, NombrePer, Imagen, IdCategorias);
+                ListaPersonjaes.Add(P);
+
+            }
+
+            Desconectar(conexion);
+            return ListaPersonjaes;
+        }
+
+
+
+
+
     }
 }

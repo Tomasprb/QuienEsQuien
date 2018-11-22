@@ -300,6 +300,8 @@
     <Content Include="Views\BackOffice\ABM_Personajes_Pregunta.cshtml" />
     <Content Include="Views\BackOffice\FinPregunta.cshtml" />
     <Content Include="Views\Home\Perfil.cshtml" />
+    <Content Include="Views\Game\Preguntas.cshtml" />
+    <Content Include="Views\Game\Mostrar_personajes.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
