@@ -329,15 +329,15 @@ namespace QuienesQuien.Models
 
         //ABM PREGUNTAS_PERSONAJES (mateo)
 
-        public void InsertarPersonaje_Pregunta(Personaje_pregunta PP)
+        public void InsertarPersonaje_Pregunta(int IdPersonaje, int IdPregunta)
         {
 
             SqlConnection Conexion = Conectar();
             SqlCommand consulta = Conexion.CreateCommand();
             consulta.CommandText = "sp_AltaPersonajes_Pregunta";
             consulta.CommandType = System.Data.CommandType.StoredProcedure;
-            consulta.Parameters.AddWithValue("@pIdPersonaje", PP.IdPersonaje);
-            consulta.Parameters.AddWithValue("@pIdPregunta", PP.IdPregunta);
+            consulta.Parameters.AddWithValue("@pIdPersonaje", IdPersonaje);
+            consulta.Parameters.AddWithValue("@pIdPregunta", IdPregunta);
             consulta.ExecuteNonQuery();
             Desconectar(Conexion);
 
@@ -409,10 +409,30 @@ namespace QuienesQuien.Models
             Desconectar(conexion);
 
         }
+        public List<Preguntas> ListarPreguntasxPersonaje(int IdPersonaje)
+        {
+            List<Preguntas> Preguntas = new List<Preguntas>();
+            SqlConnection conexion = Conectar();
+            SqlCommand consulta = conexion.CreateCommand();
+            consulta.CommandText = "sp_ListarPreguntasxPersonaje";
+            consulta.CommandType = System.Data.CommandType.StoredProcedure;
+            consulta.Parameters.AddWithValue("@PId", IdPersonaje);
+            SqlDataReader dataReader = consulta.ExecuteReader();
+            while (dataReader.Read())
+            {
+                int IdPregunta = Convert.ToInt32(dataReader["IdPregunta"]);
+                string texto = (dataReader["Texto"].ToString());
+                int IdCategoria = Convert.ToInt32(dataReader["IdCategoria"]);
 
-        //--------------------------------------------------------------------------------
+                Preguntas P = new Preguntas(IdPregunta, texto, IdCategoria);
+                Preguntas.Add(P);
+            }
+            Desconectar(conexion);
+            return Preguntas;
+        }
+            //--------------------------------------------------------------------------------
 
-        public string ObtenerImagen(int IdPersonaje)
+            public string ObtenerImagen(int IdPersonaje)
         {
             string MiImagen = "";
             SqlConnection conexion = Conectar();
