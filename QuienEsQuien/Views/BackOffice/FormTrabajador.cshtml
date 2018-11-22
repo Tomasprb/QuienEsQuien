@@ -19,7 +19,7 @@
         <center><h2>@ViewBag.Accion</h2></center> <br />
         @using (Html.BeginForm("CosasATrabajador", "BackOffice", FormMethod.Post))
         {
-        <p>@ViewBag.Baja</p>
+            <p>@ViewBag.Baja</p>
             if (ViewBag.Accion == "Ver")
             {
                 <pr>Nombre: </pr> @Html.TextBoxFor(x => x.Nombre, new { disabled = "disabled" }) <br /> <br />
@@ -27,7 +27,7 @@
             }
             else
             {
-                <pr>Nombre: </pr> @Html.TextBoxFor(x => x.Nombre, new { type = "text",  required = "required" }) <br /> <br />
+                <pr>Nombre: </pr> @Html.TextBoxFor(x => x.Nombre, new { type = "text", required = "required" }) <br /> <br />
 
             }
             <input type="hidden" name="Accion" value=@ViewBag.Accion>

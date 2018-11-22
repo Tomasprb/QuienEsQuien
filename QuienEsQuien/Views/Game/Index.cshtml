@@ -15,7 +15,7 @@
 <body class="w3-black">
     <div class="w3-padding-large" id="main">
         <center><h1>Juego</h1></center>
-        @using (Html.BeginForm("Preguntas", "Game", FormMethod.Post))
+        @using (Html.BeginForm("Mostrar_personajes", "Game", FormMethod.Post))
         {
             <h3>Elija una categoría con la cual jugar</h3>
             if (ViewBag.Error == null)
