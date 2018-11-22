@@ -36,6 +36,11 @@ namespace QuienEsQuien.Controllers
                 int n = new Random().Next(1, Num);
                 MiPersonaje = MisPersonajes[n - 1];
                 Session["PersonajeAzar"] = MiPersonaje;
+                List<Personajes> ListaPersonajes = new List<Personajes>();
+                Conexion MiConexion = new Conexion();
+                ListaPersonajes = MiConexion.PersonajesPorCategoria(tCate);
+                ViewBag.Lista = ListaPersonajes;
+                Session["ListaPersonajes"] = ListaPersonajes;
 
             }
             else
@@ -48,23 +53,15 @@ namespace QuienEsQuien.Controllers
                 int n = new Random().Next(1, Num);
                 MiPersonaje2 = MisPersonajes1[n];
                 Session["PersonajeAzar"] = MiPersonaje2;
-
-            }
-
-            if (tCate != 0)
-            {
-                List<Personajes> ListaPersonajes = new List<Personajes>();
-                Conexion MiConexion = new Conexion();
-                ListaPersonajes = MiConexion.PersonajesPorCategoria(tCate);
-                ViewBag.Lista = ListaPersonajes;
-            }
-            else
-            {
                 List<Personajes> ListaPersonajes = new List<Personajes>();
                 Conexion MiConexion = new Conexion();
                 ListaPersonajes = MiConexion.Personajes();
                 ViewBag.Lista = ListaPersonajes;
+                Session["ListaPersonajes"] = ListaPersonajes;
+
             }
+
+          
 
 
 

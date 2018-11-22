@@ -482,7 +482,7 @@ namespace QuienesQuien.Models
             List<Personajes> ListaPersonjaes = new List<Personajes>();
             SqlConnection conexion = Conectar();
             SqlCommand consulta = conexion.CreateCommand();
-            consulta.CommandText = "sp_PersonajesPorCategoria";
+            consulta.CommandText = "sp_TraerTodosLosPersonajes";
             consulta.CommandType = System.Data.CommandType.StoredProcedure;
             SqlDataReader dataReader = consulta.ExecuteReader();
             while (dataReader.Read())

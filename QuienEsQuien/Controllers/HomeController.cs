@@ -15,6 +15,8 @@ namespace QuienesQuien.Controllers
 
         public ActionResult Index()
         {
+            Session["NombreNow"] = null;
+            Session["AdminNow"] = false;
             return View();
         }
 
@@ -117,8 +119,15 @@ namespace QuienesQuien.Controllers
 
         public ActionResult Perfil()
         {
-            ViewBag.Usuario = bd.ObtenerUsuario(Session["NombreNow"].ToString());
-            return View();
+            if (Session["NombreNow"] != null)
+            {
+                ViewBag.Usuario = bd.ObtenerUsuario(Session["NombreNow"].ToString());
+                return View();
+            }
+            else
+            {
+                return View("LoginParcial");
+            }
         }
     }
 }
