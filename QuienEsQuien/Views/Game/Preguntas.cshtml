@@ -42,25 +42,31 @@
 </head>
 <body class="w3-black">
     <div class="w3-padding-large" id="main">
-        <table style="width:50%">
-            <tr style="background-color:#222222">
-                <td><center><h2><b>Preguntas</b></h2></center></td>
-            </tr>
-            @foreach (Preguntas x in ViewBag.Preguntas)
-            {
-                <tr style="height:30px">
-                    <td class="Centrado" ondrop="drop(event)" ondragover="allowDrop(event)">
-                        <div value="@x.IdPregunta" id="drag_@x.IdPregunta" draggable="true" ondragstart="drag(event)">@x.Texto</div>
-                    </td>
+        @using (Html.BeginForm("Respuesta", "Game", FormMethod.Post))
+        {
+            <table style="width:50%">
+                <tr style="background-color:#222222">
+                    <td><center><h2><b>Preguntas</b></h2></center></td>
                 </tr>
-            }
-        </table>
-        <br /> <br />
-        <div style="position:fixed;top:12px;margin-left:50%">
-            Arrastre una pregunta
-            <div class="drop Centrado" id="drop" name="Pregunta" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            <br />
-            <button class="button black" style="margin-left:59px">Siguiente</button>
-        </div>
+                @{
+                    List<Preguntas> Lista = (List<Preguntas>)Session["ListaPreguntas"];
+                    foreach (Preguntas x in Lista)
+                    {
+                        <tr style="height:30px">
+                            <td class="Centrado" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                <div value="@x.IdPregunta" id="drag_@x.IdPregunta" draggable="true" ondragstart="drag(event)">@x.Texto</div>
+                            </td>
+                        </tr>
+                    }
+                }
+            </table>
+            <br /> <br />
+            <div style="position:fixed;top:12px;margin-left:50%">
+                Arrastre una pregunta
+                <div class="drop Centrado" id="drop" name="Pregunta" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <br />
+                <button class="button black" style="margin-left:59px">Siguiente</button>
+            </div>
+        }
     </div>
 </body>

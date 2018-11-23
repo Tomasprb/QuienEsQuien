@@ -35,15 +35,11 @@ namespace QuienEsQuien.Controllers
                 int n = new Random().Next(1, Num);
                 MiPersonaje = MisPersonajes[n - 1];
                 Session["PersonajeAzar"] = MiPersonaje;
-<<<<<<< HEAD
-=======
                 List<Personajes> ListaPersonajes = new List<Personajes>();
                 Conexion MiConexion = new Conexion();
                 ListaPersonajes = MiConexion.PersonajesPorCategoria(tCate);
                 ViewBag.Lista = ListaPersonajes;
                 Session["ListaPersonajes"] = ListaPersonajes;
-
->>>>>>> a1d9d50eb55682d3d96a5ec9fe6546a90e6b0e18
             }
             else
             {
@@ -55,41 +51,51 @@ namespace QuienEsQuien.Controllers
                 int n = new Random().Next(1, Num);
                 MiPersonaje2 = MisPersonajes1[n];
                 Session["PersonajeAzar"] = MiPersonaje2;
-<<<<<<< HEAD
-            }
-            if (tCate != 0)
-            {
-                List<Personajes> ListaPersonajes = new List<Personajes>();
-                Conexion MiConexion = new Conexion();
-                ListaPersonajes = MiConexion.PersonajesPorCategoria(tCate);
-                ViewBag.Lista = ListaPersonajes;
-            }
-            else
-            {
-=======
->>>>>>> a1d9d50eb55682d3d96a5ec9fe6546a90e6b0e18
                 List<Personajes> ListaPersonajes = new List<Personajes>();
                 Conexion MiConexion = new Conexion();
                 ListaPersonajes = MiConexion.Personajes();
                 ViewBag.Lista = ListaPersonajes;
                 Session["ListaPersonajes"] = ListaPersonajes;
-
             }
-<<<<<<< HEAD
             ViewBag.Categoria = tCate;
-=======
-
-          
-
-
-
-
->>>>>>> a1d9d50eb55682d3d96a5ec9fe6546a90e6b0e18
             return View();
         }
+
         public ActionResult Preguntas(int tCate)
         {
-            ViewBag.Preguntas = BD.ListarPreguntasCate(tCate);
+            Session["ListaPreguntas"] = BD.ListarPreguntasCate(tCate);
+            return View();
+        }
+
+        public ActionResult Respuesta(int Pregunta)
+        {
+            //BORRO LA PREGUNTA DEL SESSION
+            List<Preguntas> ListaPreguntas = (List<Preguntas>)Session["ListaPreguntas"];
+            int a = ListaPreguntas.Count();
+            while (a > 0)
+            {
+                if (ListaPreguntas[a - 1].IdPregunta == Pregunta)
+                {
+                    ListaPreguntas.RemoveAt(a - 1);
+                    break;
+                }
+                else
+                {
+                    a--;
+                }
+            }
+            Session["ListaPreguntas"] = ListaPreguntas;
+            //ME FIJO SI LA PREGUNTA ES CORRECTA
+            Personajes p = (Personajes)Session["PersonajeAzar"];
+            int respuesta = BD.Respuesta(Pregunta, p.IdPersonaje);
+            if (respuesta == -1)
+            {
+                ViewBag.Respuesta = "Falso";
+            }
+            else
+            {
+                ViewBag.Respuesta = "Verdadero";
+            }
             return View();
         }
     }
