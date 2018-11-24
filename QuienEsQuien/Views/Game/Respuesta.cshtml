@@ -23,15 +23,21 @@
 <body class="w3-black">
     <div class="w3-padding-large" id="main">
         <center><h2>Respuesta</h2></center>
-        @if (ViewBag.Respuesta == false)
+        @if (ViewBag.Arriesgar == null)
         {
-            <center><h3 style="color:red">¡La respuesta es NO!</h3></center>
+            if (ViewBag.Respuesta == false)
+            {
+                <center><h3 style="color:red">¡La respuesta es NO!</h3></center>
+            }
+            else
+            {
+                <center><h3 style="color:lightgreen">¡La respuesta es SI!</h3></center>
+            }
         }
-        @if (ViewBag.Respuesta == true)
+        else
         {
-            <center><h3 style="color:lightgreen">¡La respuesta es SI!</h3></center>
+                <center><h3 style="color:red">¡Ese no es el personaje!</h3></center>
         }
-
         <table align="center" bordercolor="Black" style="width:100%">
             <tr style="background-color:#222222">
                 <td><center><h2><b>Opción</b></h2></center></td>
@@ -41,20 +47,20 @@
                 <td>
                     <a href="@Url.Action("Preguntas", "Game")">Hacer otra pregunta</a>
                 </td>
-                <td><img class="bit" src="~/Content/bitcoins/plata.png" />500</td>
+                <td><img class="bit" src="~/Content/bitcoins/oro.png" />500</td>
             </tr>
             <tr>
                 <td>
                     <a href="@Url.Action("Mostrar_personajes", "Game")">Ver a los personajes</a>
                 </td>
-                <td><img class="bit" src="~/Content/bitcoins/plata.png" />5.000</td>
+                <td><img class="bit" src="~/Content/bitcoins/oro.png" />5.000</td>
             </tr>
             <tr>
                 <td>
-                    <a href="@Url.Action("Mostrar_personajes", "Game")">Arriesgar personaje</a>
+                    <a href="@Url.Action("Arriesgar_personaje", "Game")">Arriesgar personaje</a>
                 </td>
-                <td><img class="bit" src="~/Content/bitcoins/plata.png" />50.000</td>
+                <td><img class="bit" src="~/Content/bitcoins/oro.png" />50.000</td>
             </tr>
-        </table>    
+        </table>
     </div>
 </body>

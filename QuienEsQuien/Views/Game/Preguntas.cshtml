@@ -18,6 +18,11 @@
             height: 30px;
             border: 1px solid white;
         }
+        ul {
+            list-style-type: none;
+            background-color:white;
+            color: black;
+        }
     </style>
     <script>
         function allowDrop(ev) {
@@ -34,6 +39,7 @@
             if (ev.target.id == "drop") {
                 ev.target.id = "drop_lleno";
                 ev.target.appendChild(document.getElementById(data));
+                document.getElementById(data).name = "Pregunta0";
             }
         }
     </script>
@@ -42,29 +48,51 @@
     <div class="w3-padding-large" id="main">
         @using (Html.BeginForm("Respuesta", "Game", FormMethod.Post))
         {
-            <table style="width:50%">
-                <tr style="background-color:#222222">
-                    <td><center><h2><b>Preguntas</b></h2></center></td>
-                </tr>
+            <ul style="width:50%">
+                <li><h2><b>Preguntas</b></h2></li>
                 @{
                     List<Preguntas> Lista = (List<Preguntas>)Session["ListaPreguntas"];
                     foreach (Preguntas x in Lista)
                     {
-                        <tr style="height:30px">
-                            <td class="Centrado" ondrop="drop(event)" ondragover="allowDrop(event)">
-                                <div value="@x.IdPregunta" id="drag_@x.IdPregunta" draggable="true" ondragstart="drag(event)" style="width:auto;height:auto">@x.Texto</div>
-                            </td>
-                        </tr>
+                        <li value="@x.IdPregunta" name="Pregunta_@x.IdPregunta" id="drag_@x.IdPregunta" draggable="true" ondragstart="drag(event)">@x.Texto</li>
                     }
                 }
-            </table>
-            <br /> <br />
+            </ul>
             <div style="position:fixed;top:12px;margin-left:63%">
                 <p style="margin:unset">Arrastre una pregunta</p>
-                <div class="drop Centrado" id="drop" name="Pregunta" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <ul id="drop" name="Pregunta2" ondrop="drop(event)" ondragover="allowDrop(event)" style="width:167px;height:23px"></ul>
                 <br />
                 <button class="button black" style="margin-left:33px">Siguiente</button>
             </div>
         }
     </div>
 </body>
+@*<body class="w3-black">
+        <div class="w3-padding-large" id="main">
+            @using (Html.BeginForm("Respuesta", "Game", FormMethod.Post))
+            {
+                <table style="width:50%">
+                    <tr style="background-color:#222222">
+                        <td><center><h2><b>Preguntas</b></h2></center></td>
+                    </tr>
+                    @{
+                        List<Preguntas> Lista = (List<Preguntas>)Session["ListaPreguntas"];
+                        foreach (Preguntas x in Lista)
+                        {
+                            <tr style="height:30px">
+                                <td class="Centrado" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                    <div value="@x.IdPregunta" id="drag_@x.IdPregunta" draggable="true" ondragstart="drag(event)" style="width:auto;height:auto">@x.Texto</div>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </table>
+                <div style="position:fixed;top:12px;margin-left:63%">
+                    <p style="margin:unset">Arrastre una pregunta</p>
+                    <div class="drop Centrado" id="drop" name="Pregunta" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <br />
+                    <button class="button black" style="margin-left:33px">Siguiente</button>
+                </div>
+            }
+        </div>
+    </body>*@
