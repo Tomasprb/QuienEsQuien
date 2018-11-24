@@ -15,8 +15,6 @@ namespace QuienesQuien.Controllers
 
         public ActionResult Index()
         {
-            Session["NombreNow"] = null;
-            Session["AdminNow"] = false;
             return View();
         }
 

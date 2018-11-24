@@ -14,6 +14,7 @@ namespace QuienEsQuien.Controllers
         // GET: Game
         public ActionResult Index()
         {
+            Session["BitcoinsARestar"] = 0;
             ViewBag.Categorias = BD.ListarCategorias();
             return View();
         }
@@ -35,14 +36,11 @@ namespace QuienEsQuien.Controllers
                 int n = new Random().Next(1, Num);
                 MiPersonaje = MisPersonajes[n - 1];
                 Session["PersonajeAzar"] = MiPersonaje;
-
                 List<Personajes> ListaPersonajes = new List<Personajes>();
                 Conexion MiConexion = new Conexion();
                 ListaPersonajes = MiConexion.PersonajesPorCategoria(tCate);
                 ViewBag.Lista = ListaPersonajes;
                 Session["ListaPersonajes"] = ListaPersonajes;
-
-
             }
             else
             {
@@ -54,7 +52,6 @@ namespace QuienEsQuien.Controllers
                 int n = new Random().Next(1, Num);
                 MiPersonaje2 = MisPersonajes1[n];
                 Session["PersonajeAzar"] = MiPersonaje2;
-
                 List<Personajes> ListaPersonajes = new List<Personajes>();
                 Conexion MiConexion = new Conexion();
                 ListaPersonajes = MiConexion.Personajes();
@@ -62,12 +59,53 @@ namespace QuienEsQuien.Controllers
                 Session["ListaPersonajes"] = ListaPersonajes;
             }
             ViewBag.Categoria = tCate;
-
             return View();
         }
+
         public ActionResult Preguntas(int tCate)
         {
-            ViewBag.Preguntas = BD.ListarPreguntasCate(tCate);
+            if (tCate == 0)
+            {
+                Session["ListaPreguntas"] = BD.ListarPreguntas();
+            }
+            else
+            {
+                Session["ListaPreguntas"] = BD.ListarPreguntasCate(tCate);
+            }
+            return View();
+        }
+
+        public ActionResult Respuesta(int Pregunta)
+        {
+            //BORRO LA PREGUNTA DEL SESSION
+            List<Preguntas> ListaPreguntas = (List<Preguntas>)Session["ListaPreguntas"];
+            int a = ListaPreguntas.Count();
+            while (a > 0)
+            {
+                if (ListaPreguntas[a - 1].IdPregunta == Pregunta)
+                {
+                    ListaPreguntas.RemoveAt(a - 1);
+                    break;
+                }
+                else
+                {
+                    a--;
+                }
+            }
+            Session["ListaPreguntas"] = ListaPreguntas;
+            //RESTO BITCOINS
+            Session["BitcoinsARestar"] = (int)Session["BitcoinsARestar"] - 500;
+            //ME FIJO SI LA PREGUNTA ES CORRECTA
+            Personajes p = (Personajes)Session["PersonajeAzar"];
+            int respuesta = BD.Respuesta(Pregunta, p.IdPersonaje);
+            if (respuesta == -1)
+            {
+                ViewBag.Respuesta = false;
+            }
+            else
+            {
+                ViewBag.Respuesta = true;
+            }
             return View();
         }
     }

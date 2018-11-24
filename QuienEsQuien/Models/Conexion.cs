@@ -551,16 +551,34 @@ namespace QuienesQuien.Models
             SqlDataReader dataReader = consulta.ExecuteReader();
             while (dataReader.Read())
             {
-                int id = Convert.ToInt32(dataReader["IdUser"]);
                 string nom = (dataReader["Nombre"].ToString());
                 int bit = Convert.ToInt32(dataReader["Bitcoins"]);
 
-                Ranking R = new Ranking(id, nom, bit);
+                Ranking R = new Ranking(nom, bit);
                 lista.Add(R);
             }
 
             Desconectar(conexion);
             return lista;
+        }
+
+        public int Respuesta(int Pregunta, int Personaje)
+        {
+            int ID = -1;
+            SqlConnection conexion = Conectar();
+            SqlCommand consulta = conexion.CreateCommand();
+            consulta.CommandText = "sp_TraerRanking";
+            consulta.CommandType = System.Data.CommandType.StoredProcedure;
+            consulta.Parameters.AddWithValue("@pIdPersonaje", Personaje);
+            consulta.Parameters.AddWithValue("@pIdPregunta", Pregunta);
+            SqlDataReader dataReader = consulta.ExecuteReader();
+            while (dataReader.Read())
+            {
+                ID = Convert.ToInt32(dataReader["IdPersonaje_Pregunta"]);
+            }
+
+            Desconectar(conexion);
+            return ID;
         }
     }
 }
