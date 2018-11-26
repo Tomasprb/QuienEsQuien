@@ -80,3 +80,4 @@ Z:\Programación\AQuienEsQuien\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.
 Z:\Programación\AQuienEsQuien\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.csproj.CopyComplete
 Z:\Programación\AQuienEsQuien\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.dll
 Z:\Programación\AQuienEsQuien\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.pdb
+Z:\Programación\AQuienEsQuien\QuienEsQuien\QuienEsQuien\obj\Debug\QuienEsQuien.csprojAssemblyReference.cache

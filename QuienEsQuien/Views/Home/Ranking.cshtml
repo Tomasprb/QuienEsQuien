@@ -1,6 +1,6 @@
 ﻿@using QuienEsQuien.Models
 @{
-    ViewBag.Title = "Acerca de nosotros";
+    ViewBag.Title = "Ranking";
 }
 
 <head>
@@ -11,19 +11,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="~/Content/Cosa.css" rel="stylesheet" />
     <link href="~/Styles/Tables.css" rel="stylesheet" />
+    <style>
+        .bit {
+            height: 29px;
+        }
+    </style>
+    @{
+        var Posicion = (int)1;
+    }
 </head>
 <body class="w3-black">
     <div class="w3-padding-large" id="main">
         <center><h1>Ranking</h1></center>
         <table style="width:100%">
             <tr style="background-color:#222222">
+                <td style="width:50px;padding-left:10px;padding-right:10px"><center><h2><b>Puesto</b></h2></center></td>
                 <td><center><h2><b>Usuario</b></h2></center></td>
                 <td><center><h2><b>Bitcoins</b></h2></center></td>
             </tr>
             @foreach (Ranking x in ViewBag.Ranking)
             {
-                <tr>
-                    <td class="Centrado">@x.User</td>
+                <tr style="font-size:22px">
+                    <td class="Centrado">@Posicion</td>
+                    <td style="text-transform:uppercase" class="Centrado">
+                        @if (Posicion == 1)
+                        {
+                            <img class="bit" src="~/Content/bitcoins/oro.png" />
+                        }
+                        else if (Posicion == 2)
+                        {
+                            <img class="bit" src="~/Content/bitcoins/plata.png" />
+                        }
+                        else if (Posicion == 3)
+                        {
+                            <img class="bit" src="~/Content/bitcoins/bronce.png" />
+                        }
+                        @Html.ActionLink(x.User, "Perfil", "Home", new { user = x.User }, null)
+                    </td>
+                    @(Posicion++)
                     <td class="Centrado">@x.Bitcoins</td>
                 </tr>
             }

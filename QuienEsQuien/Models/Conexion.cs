@@ -12,7 +12,7 @@ namespace QuienesQuien.Models
     {
         private static string SC = "Server=10.128.8.16;Database=QEQB07;User Id=QEQB07;Password=QEQB07;";
 
-        //private static string SC = "Server=LAPTOP-BT997U35\\SQLEXPRESS;Database=QEQnew;User Id=ORT;Password=ort;";
+        //private static string SC = "Server=LAPTOP-BT997U35\\SQLEXPRESS;Database=QuienEsQuien;User Id=ORT;Password=ort;";
 
 
 
@@ -567,7 +567,7 @@ namespace QuienesQuien.Models
             int ID = -1;
             SqlConnection conexion = Conectar();
             SqlCommand consulta = conexion.CreateCommand();
-            consulta.CommandText = "sp_TraerRanking";
+            consulta.CommandText = "sp_Respuesta";
             consulta.CommandType = System.Data.CommandType.StoredProcedure;
             consulta.Parameters.AddWithValue("@pIdPersonaje", Personaje);
             consulta.Parameters.AddWithValue("@pIdPregunta", Pregunta);
@@ -579,6 +579,19 @@ namespace QuienesQuien.Models
 
             Desconectar(conexion);
             return ID;
+        }
+
+        public void RestarBitcoins(int bits, int user)
+        {
+            SqlConnection conexion = Conectar();
+            SqlCommand consulta = conexion.CreateCommand();
+            consulta.CommandText = "sp_ModificacionBitcoins";
+            consulta.CommandType = System.Data.CommandType.StoredProcedure;
+            consulta.Parameters.AddWithValue("@pBitcoins", bits);
+            consulta.Parameters.AddWithValue("@pIdUser", user);
+            consulta.ExecuteNonQuery();
+
+            Desconectar(conexion);
         }
     }
 }

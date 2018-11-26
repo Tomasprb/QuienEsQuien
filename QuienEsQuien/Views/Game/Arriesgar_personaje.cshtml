@@ -1,6 +1,6 @@
 ﻿@using QuienEsQuien.Models
 @{
-    ViewBag.Title = "Mostrar Personajes";
+    ViewBag.Title = "Arriesgar_personaje";
 }
 <head>
     <link href="~/Styles/Estilos1.css" rel="stylesheet" />
@@ -17,14 +17,10 @@
     <div class="w3-padding-large" id="main">
         <center><h2>Personajes</h2></center>
         <br />
-        <form action="@Url.Action("Preguntas", "Game")" method="post">
-            <center><button class="button black">Siguiente</button></center>
-        </form>
-        <br />
+        <center><h3>Hace click sobre el nombre de un personaje para arriesgar</h3></center>
         <br />
         <table align="center" bordercolor="Black" style="width:100%">
             <tr style="background-color:#222222">
-                <td><center><h2><b>Imagen</b></h2></center></td>
                 <td><center><h2><b>Nombre</b></h2></center></td>
             </tr>
             @{
@@ -33,12 +29,11 @@
                 {
                     <tr class="Centrado">
                         <td>
-                            <img src="~/Content/@MiPersonaje.Imagen" alt="Foto Personaje" class="img-rounded"
-                                 style="width: 100px;
-                                         height: 100px" />
-                        </td>
-                        <td>
-                            <h3><b>@MiPersonaje.Nombre</b></h3>
+                            <form action="@Url.Action("Arriesgar", "Game")" method="post">
+                                <button class="button black" name="Personaje" value="@MiPersonaje.IdPersonaje">
+                                    <h3><b>@MiPersonaje.Nombre</b></h3>
+                                </button>
+                            </form>
                         </td>
                     </tr>
                 }

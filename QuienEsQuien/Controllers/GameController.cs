@@ -14,10 +14,12 @@ namespace QuienEsQuien.Controllers
         // GET: Game
         public ActionResult Index()
         {
+            Session["Primera"] = true;
+            Session["BitcoinsARestar"] = 0;
             ViewBag.Categorias = BD.ListarCategorias();
             return View();
         }
-        public ActionResult Mostrar_personajes(int tCate)
+        public ActionResult Categoria(int tCate)
         {
             if (tCate == -1)
             {
@@ -57,18 +59,34 @@ namespace QuienEsQuien.Controllers
                 ViewBag.Lista = ListaPersonajes;
                 Session["ListaPersonajes"] = ListaPersonajes;
             }
-            ViewBag.Categoria = tCate;
+            Session["Categoría"] = tCate;
+            return RedirectToAction("Mostrar_personajes");
+        }
+        public ActionResult Mostrar_personajes()
+        {
+            if ((int)Session["BitcoinsARestar"] != 0 && (bool)Session["Primera"] == false)
+            {
+                Session["BitcoinsARestar"] = (int)Session["BitcoinsARestar"] - 5000;
+            }
             return View();
         }
 
-        public ActionResult Preguntas(int tCate)
+        public ActionResult Preguntas()
         {
-            Session["ListaPreguntas"] = BD.ListarPreguntasCate(tCate);
+            if ((int)Session["Categoría"] == 0)
+            {
+                Session["ListaPreguntas"] = BD.ListarPreguntas();
+            }
+            else
+            {
+                Session["ListaPreguntas"] = BD.ListarPreguntasCate((int)Session["Categoría"]);
+            }
             return View();
         }
-
-        public ActionResult Respuesta(int Pregunta)
+        [HttpPost]
+        public ActionResult Respuesta(string Pregunta0)
         {
+            int Pregunta = Convert.ToInt32(Pregunta0);
             //BORRO LA PREGUNTA DEL SESSION
             List<Preguntas> ListaPreguntas = (List<Preguntas>)Session["ListaPreguntas"];
             int a = ListaPreguntas.Count();
@@ -85,18 +103,39 @@ namespace QuienEsQuien.Controllers
                 }
             }
             Session["ListaPreguntas"] = ListaPreguntas;
+            //RESTO BITCOINS
+            Session["BitcoinsARestar"] = (int)Session["BitcoinsARestar"] - 500;
             //ME FIJO SI LA PREGUNTA ES CORRECTA
             Personajes p = (Personajes)Session["PersonajeAzar"];
             int respuesta = BD.Respuesta(Pregunta, p.IdPersonaje);
             if (respuesta == -1)
             {
-                ViewBag.Respuesta = "Falso";
+                ViewBag.Respuesta = false;
             }
             else
             {
-                ViewBag.Respuesta = "Verdadero";
+                ViewBag.Respuesta = true;
             }
+            Session["Primera"] = false;
             return View();
+        }
+        public ActionResult Arriesgar(int Personaje)
+        {
+            if (Personaje == ((Personajes)Session["PersonajeAzar"]).IdPersonaje)
+            {
+                BD.RestarBitcoins((int)Session["BitcoinsARestar"], (int)Session["NombreNow"]);
+                return View("Fin");
+            }
+            else
+            {
+                Session["BitcoinsARestar"] = (int)Session["BitcoinsARestar"] - 50000;
+                ViewBag.Arriesgar = false;
+                return View("Respuesta");
+            }
+        }
+        public ActionResult Arriesgar_personaje()
+        {
+            return View("Arriesgar_personaje");
         }
     }
 }

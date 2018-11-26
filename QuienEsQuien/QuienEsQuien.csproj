@@ -303,6 +303,8 @@
     <Content Include="Views\Game\Preguntas.cshtml" />
     <Content Include="Views\Game\Mostrar_personajes.cshtml" />
     <Content Include="Views\Game\Respuesta.cshtml" />
+    <Content Include="Views\Game\Fin.cshtml" />
+    <Content Include="Views\Game\Arriesgar_personaje.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
