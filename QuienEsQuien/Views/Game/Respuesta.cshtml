@@ -1,13 +1,4 @@
-<<<<<<< HEAD
-﻿
-@{
-    ViewBag.Title = "Respuesta";
-}
-
-<h2>Respuesta</h2>
-
-=======
-﻿@{
+﻿﻿@{
     ViewBag.Title = "Respuesta";
 }
 
@@ -38,7 +29,7 @@
             {
                 <center><h3 style="color:red">¡La respuesta es NO!</h3></center>
             }
-            else
+            else if(ViewBag.Respuesta == true)
             {
                 <center><h3 style="color:lightgreen">¡La respuesta es SI!</h3></center>
             }
@@ -73,4 +64,3 @@
         </table>
     </div>
 </body>
->>>>>>> 0cd6710a1ac34b761757e6279a3a2705b8c76893

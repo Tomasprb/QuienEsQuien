@@ -430,9 +430,9 @@ namespace QuienesQuien.Models
             Desconectar(conexion);
             return Preguntas;
         }
-            //--------------------------------------------------------------------------------
+        //--------------------------------------------------------------------------------
 
-            public string ObtenerImagen(int IdPersonaje)
+        public string ObtenerImagen(int IdPersonaje)
         {
             string MiImagen = "";
             SqlConnection conexion = Conectar();
@@ -574,7 +574,7 @@ namespace QuienesQuien.Models
             SqlDataReader dataReader = consulta.ExecuteReader();
             while (dataReader.Read())
             {
-                ID = Convert.ToInt32(dataReader["IdPersonaje_Pregunta"]);
+                ID++;
             }
 
             Desconectar(conexion);
@@ -592,6 +592,24 @@ namespace QuienesQuien.Models
             consulta.ExecuteNonQuery();
 
             Desconectar(conexion);
+        }
+
+        public List<int> Personaje_pregunta(int pregunta)
+        {
+            List<int> ID = new List<int>();
+            SqlConnection conexion = Conectar();
+            SqlCommand consulta = conexion.CreateCommand();
+            consulta.CommandText = "sp_Personaje_pregunta";
+            consulta.CommandType = System.Data.CommandType.StoredProcedure;
+            consulta.Parameters.AddWithValue("@pIdPregunta", pregunta);
+            SqlDataReader dataReader = consulta.ExecuteReader();
+            while (dataReader.Read())
+            {
+                ID.Add(Convert.ToInt32(dataReader["IdPregunta"]));
+            }
+
+            Desconectar(conexion);
+            return ID;
         }
     }
 }

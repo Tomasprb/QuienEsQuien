@@ -90,12 +90,23 @@ namespace QuienEsQuien.Controllers
             //BORRO LA PREGUNTA DEL SESSION
             List<Preguntas> ListaPreguntas = (List<Preguntas>)Session["ListaPreguntas"];
             int a = ListaPreguntas.Count();
+            List<Preguntas> Pregs = BD.ListarPreguntas();
+            foreach (Preguntas x in ListaPreguntas)
+            {
+                foreach (Preguntas preguntas in Pregs)
+                {
+                    if (x.IdPregunta == Pregunta)
+                    {
+                        ListaPreguntas.Remove(preguntas);
+                    }
+                }
+            }
             while (a > 0)
             {
                 if (ListaPreguntas[a - 1].IdPregunta == Pregunta)
                 {
                     ListaPreguntas.RemoveAt(a - 1);
-                    break;
+                    a = 0;
                 }
                 else
                 {
@@ -110,10 +121,43 @@ namespace QuienEsQuien.Controllers
             int respuesta = BD.Respuesta(Pregunta, p.IdPersonaje);
             if (respuesta == -1)
             {
+                //SACAR PERSONAJES DE Session["ListaPersonajes"]
+                List<Personajes> Lista = (List<Personajes>)Session["ListaPersonajes"];
+                List<int> personaje = BD.Personaje_pregunta(Pregunta);
+                foreach (Personajes x in Lista)
+                {
+                    foreach (int i in personaje)
+                    {
+                        if (x.IdPersonaje == i)
+                        {
+                            Personajes P = BD.ObtenerPersonaje(i);
+                            Lista.Remove(P);
+                        }
+                    }
+                }
+                Session["ListaPersonajes"] = Lista;
                 ViewBag.Respuesta = false;
             }
             else
             {
+                //SACAR PERSONAJES DE Session["ListaPersonajes"]
+                List<Personajes> Lista = (List<Personajes>)Session["ListaPersonajes"];
+                List<int> personaje = BD.Personaje_pregunta(Pregunta);
+                foreach (Personajes x in Lista)
+                {
+                    foreach (int i in personaje)
+                    {
+                        if (x.IdPersonaje == i)
+                        {
+                        }
+                        else
+                        {
+                            Personajes P = BD.ObtenerPersonaje(i);
+                            Lista.Remove(P);
+                        }
+                    }
+                }
+                Session["ListaPersonajes"] = Lista;
                 ViewBag.Respuesta = true;
             }
             Session["Primera"] = false;

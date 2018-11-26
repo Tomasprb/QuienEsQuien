@@ -54,8 +54,9 @@
             text-align: center;
         }
 
-        .Titulo{
+        .Titulo {
             background-color: #222222;
+            border-width: 1.5px 1.5px 1px 1.5px;
         }
 
         .preguntas {
@@ -63,7 +64,7 @@
         }
 
         .final {
-            border-width: 0px 0px 0.5px 0px;
+            border-width: 0px 0px 1px 0px;
         }
 
         .Drop {
@@ -76,6 +77,16 @@
 </head>
 <body class="w3-black">
     <div class="w3-padding-large" id="main">
+        <center><h2>Pregunta</h2></center>
+        @if (ViewBag.Error == null)
+        {
+            <br />
+        }
+        else
+        {
+            <h3 style="color:red">@ViewBag.Error</h3>
+        }
+        <br />
         @using (Html.BeginForm("Respuesta", "Game", FormMethod.Post))
         {
             <ul style="width:50%">
@@ -89,9 +100,9 @@
                 }
                 <li class="final"></li>
             </ul>
-            <div style="position:fixed;top:12px;margin-left:63%">
+            <div style="position:fixed;top:133px;margin-left:63%">
                 <p style="margin:unset">Arrastre una pregunta</p>
-                <ul class="Drop" id="drop" name="Pregunta2" ondrop="drop(event)" ondragover="allowDrop(event)" style="width:168px;height:28px"></ul>
+                <ul class="Drop" id="drop" name="Pregunta20" ondrop="drop(event)" ondragover="allowDrop(event)" style="width:168px;height:28px"></ul>
                 <br />
                 <button class="button black" style="margin-left:33px">Siguiente</button>
             </div>
