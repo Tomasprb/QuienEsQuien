@@ -309,7 +309,7 @@ namespace QuienEsQuien.Controllers
 
         //ABM REGUNTAS_PERSONAJES
 
-        public ActionResult Personajes_Pregunta(int ID, string Nombre)
+        public ActionResult Personajes_Pregunta(int ID, string Nombre,int IdCategoria)
         {
             if (Convert.ToBoolean(Session["AdminNow"]) == true)
             {
@@ -328,6 +328,7 @@ namespace QuienEsQuien.Controllers
 
                 ViewBag.Lista = ListaPersonajes_Pregunta;
                 ViewBag.IdPersonaje = ID;
+                ViewBag.IdCategoria = IdCategoria;
                 ViewBag.ListaPreguntas = ListaPreguntas;
                 ViewBag.ListaPregsPersonaje = ListaIdsPregPers;
                 ViewBag.NombrePersonaje = Nombre;
@@ -350,9 +351,12 @@ namespace QuienEsQuien.Controllers
                 List<Preguntas> ListaPregsPersonaje = new List<Preguntas>();
                 ListaPregsPersonaje = MiConexion1.ListarPreguntasxPersonaje(IdPersonaje);
                     MiConexion1.EliminarPersonaje_Pregunta(IdPersonaje);
-                foreach (int i in Box)
+                if (Box != null)
                 {
-                    MiConexion1.InsertarPersonaje_Pregunta(IdPersonaje,i);
+                    foreach (int i in Box)
+                    {
+                        MiConexion1.InsertarPersonaje_Pregunta(IdPersonaje, i);
+                    }
                 }
              
                 return RedirectToAction("Personajes", "BackOffice");

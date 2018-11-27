@@ -52,7 +52,7 @@
                     <h3> @Html.ActionLink("E", "EdicionPersonaje", "BackOffice", new { Accion = "Eliminar", ID = MiPersonaje.IdPersonaje }, null)</h3>
                 </td>
                 <td class="Centrado">
-                    <h3> @Html.ActionLink("P", "Personajes_Pregunta", "BackOffice", new {Accion= "Preguntas", ID = MiPersonaje.IdPersonaje, Nombre = MiPersonaje.Nombre }, null)</h3>
+                    <h3> @Html.ActionLink("P", "Personajes_Pregunta", "BackOffice", new {Accion= "Preguntas", ID = MiPersonaje.IdPersonaje, Nombre = MiPersonaje.Nombre, IdCategoria = MiPersonaje.IdCategoria }, null)</h3>
                 </td>
 
             </tr>

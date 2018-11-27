@@ -73,91 +73,88 @@ namespace QuienEsQuien.Controllers
 
         public ActionResult Preguntas()
         {
-            if ((int)Session["Categoría"] == 0)
+            if ((bool)Session["Primera"] == true)
             {
-                Session["ListaPreguntas"] = BD.ListarPreguntas();
-            }
-            else
-            {
-                Session["ListaPreguntas"] = BD.ListarPreguntasCate((int)Session["Categoría"]);
+                if ((int)Session["Categoría"] == 0)
+                {
+                    Session["ListaPreguntas"] = BD.ListarPreguntas();
+                }
+                else
+                {
+                    Session["ListaPreguntas"] = BD.ListarPreguntasCate((int)Session["Categoría"]);
+                }
             }
             return View();
         }
         [HttpPost]
-        public ActionResult Respuesta(string Pregunta0)
+        public ActionResult Respuesta(int IdPreguntaElegida)
         {
-            int Pregunta = Convert.ToInt32(Pregunta0);
+            int Pregunta = IdPreguntaElegida;
             //BORRO LA PREGUNTA DEL SESSION
             List<Preguntas> ListaPreguntas = (List<Preguntas>)Session["ListaPreguntas"];
-            int a = ListaPreguntas.Count();
-            List<Preguntas> Pregs = BD.ListarPreguntas();
-            foreach (Preguntas x in ListaPreguntas)
+            int CantPreg = ListaPreguntas.Count();
+            int iPreg = 0;
+            bool Salir = false;
+            while ((iPreg < CantPreg) && !Salir)
             {
-                foreach (Preguntas preguntas in Pregs)
+                if (ListaPreguntas[iPreg].IdPregunta == Pregunta)
                 {
-                    if (x.IdPregunta == Pregunta)
-                    {
-                        ListaPreguntas.Remove(preguntas);
-                    }
+                    ListaPreguntas.RemoveAt(iPreg);
+                    Salir = true;
                 }
-            }
-            while (a > 0)
-            {
-                if (ListaPreguntas[a - 1].IdPregunta == Pregunta)
-                {
-                    ListaPreguntas.RemoveAt(a - 1);
-                    a = 0;
-                }
-                else
-                {
-                    a--;
-                }
+                iPreg++;
             }
             Session["ListaPreguntas"] = ListaPreguntas;
+
             //RESTO BITCOINS
             Session["BitcoinsARestar"] = (int)Session["BitcoinsARestar"] - 500;
+
             //ME FIJO SI LA PREGUNTA ES CORRECTA
             Personajes p = (Personajes)Session["PersonajeAzar"];
             int respuesta = BD.Respuesta(Pregunta, p.IdPersonaje);
             if (respuesta == -1)
             {
                 //SACAR PERSONAJES DE Session["ListaPersonajes"]
-                List<Personajes> Lista = (List<Personajes>)Session["ListaPersonajes"];
-                List<int> personaje = BD.Personaje_pregunta(Pregunta);
-                foreach (Personajes x in Lista)
+                List<Personajes> ListaPersonajes = (List<Personajes>)Session["ListaPersonajes"];
+                List<Personaje_pregunta> Per_preg = BD.ListarPersonajes_Pregunta();
+                int CantPersonajes = ListaPersonajes.Count();
+                int iPersonajes = 0;
+                bool salir = false;
+                while ((iPersonajes < CantPersonajes) && !salir)
                 {
-                    foreach (int i in personaje)
+                    foreach (Personaje_pregunta x in Per_preg)
                     {
-                        if (x.IdPersonaje == i)
+                        if (x.IdPregunta == Pregunta && x.IdPersonaje == ListaPersonajes[iPersonajes].IdPersonaje)
                         {
-                            Personajes P = BD.ObtenerPersonaje(i);
-                            Lista.Remove(P);
+                            ListaPersonajes.RemoveAt(iPersonajes);
+                            salir = true;
                         }
                     }
+                    iPersonajes++;
                 }
-                Session["ListaPersonajes"] = Lista;
+                Session["ListaPersonajes"] = ListaPersonajes;
                 ViewBag.Respuesta = false;
             }
             else
             {
-                //SACAR PERSONAJES DE Session["ListaPersonajes"]
-                List<Personajes> Lista = (List<Personajes>)Session["ListaPersonajes"];
-                List<int> personaje = BD.Personaje_pregunta(Pregunta);
-                foreach (Personajes x in Lista)
+                List<Personajes> ListaPersonajes = (List<Personajes>)Session["ListaPersonajes"];
+                List<Personaje_pregunta> Per_preg = BD.ListarPersonajes_Pregunta();
+                int CantPersonajes = ListaPersonajes.Count();
+                int iPersonajes = 0;
+                bool salir = false;
+                while ((iPersonajes < CantPersonajes) && !salir)
                 {
-                    foreach (int i in personaje)
+                    foreach(Personaje_pregunta x in Per_preg)
                     {
-                        if (x.IdPersonaje == i)
+                        if (x.IdPregunta != Pregunta && x.IdPersonaje == ListaPersonajes[iPersonajes].IdPersonaje)
                         {
-                        }
-                        else
-                        {
-                            Personajes P = BD.ObtenerPersonaje(i);
-                            Lista.Remove(P);
+                            ListaPersonajes.RemoveAt(iPersonajes);
+                            salir = true;
                         }
                     }
+                    iPersonajes++;
                 }
-                Session["ListaPersonajes"] = Lista;
+                Session["ListaPersonajes"] = ListaPersonajes;
                 ViewBag.Respuesta = true;
             }
             Session["Primera"] = false;

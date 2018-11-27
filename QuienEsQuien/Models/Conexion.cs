@@ -594,7 +594,7 @@ namespace QuienesQuien.Models
             Desconectar(conexion);
         }
 
-        public List<int> Personaje_pregunta(int pregunta)
+        /*public List<int> Personaje_pregunta(int pregunta)
         {
             List<int> ID = new List<int>();
             SqlConnection conexion = Conectar();
@@ -610,6 +610,6 @@ namespace QuienesQuien.Models
 
             Desconectar(conexion);
             return ID;
-        }
+        }*/
     }
 }

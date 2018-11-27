@@ -27,7 +27,8 @@
             if (ev.target.id == "drop") {
                 ev.target.id = "drop_lleno";
                 ev.target.appendChild(document.getElementById(data));
-                document.getElementById(data).name = "Pregunta0";
+                var id = document.getElementById(data).id;
+                document.getElementById("IdPreguntaElegida").value = id;
             }
         }
     </script>
@@ -95,15 +96,16 @@
                     List<Preguntas> Lista = (List<Preguntas>)Session["ListaPreguntas"];
                     foreach (Preguntas x in Lista)
                     {
-                        <li class="preguntas" value="@x.IdPregunta" name="Pregunta_@x.IdPregunta" id="drag_@x.IdPregunta" draggable="true" ondragstart="drag(event)">@x.Texto</li>
+                        <li class="preguntas" value="@x.IdPregunta" name="Pregunta_@x.IdPregunta" id="@x.IdPregunta" draggable="true" ondragstart="drag(event)">@x.Texto</li>
                     }
                 }
                 <li class="final"></li>
             </ul>
             <div style="position:fixed;top:133px;margin-left:63%">
                 <p style="margin:unset">Arrastre una pregunta</p>
-                <ul class="Drop" id="drop" name="Pregunta20" ondrop="drop(event)" ondragover="allowDrop(event)" style="width:168px;height:28px"></ul>
+                <ul class="Drop" id="drop" name="Pregunta" ondrop="drop(event)" ondragover="allowDrop(event)" style="width:168px;height:28px"></ul>
                 <br />
+                <input type="hidden" name="IdPreguntaElegida" id="IdPreguntaElegida" />
                 <button class="button black" style="margin-left:33px">Siguiente</button>
             </div>
         }

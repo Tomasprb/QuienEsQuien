@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="~/Content/Cosa.css" rel="stylesheet" />
     <link href="~/Styles/Tables.css" rel="stylesheet" />
+    <link href="~/Styles/Buttons.css" rel="stylesheet" />
 </head>
 <body class="w3-black">
     <div class="w3-padding-large" id="main">
@@ -19,16 +20,19 @@
             <center><h2>@ViewBag.NombrePersonaje</h2></center><br />
             foreach (Preguntas MiPreg in ViewBag.ListaPreguntas)
             {
-                List<int> MiLista = ViewBag.ListaPregsPersonaje;
-                string chequeado = "";
-                if (MiLista.Contains(MiPreg.IdPregunta))
+                if (MiPreg.IdCategoria == ViewBag.IdCategoria)
                 {
-                    chequeado = "checked";
-                }
+                    List<int> MiLista = ViewBag.ListaPregsPersonaje;
+                    string chequeado = "";
+                    if (MiLista.Contains(MiPreg.IdPregunta))
+                    {
+                        chequeado = "checked";
+                    }
                 <input type="checkbox" name="Box" value="@MiPreg.IdPregunta" @chequeado /> @MiPreg.Texto<br />
-    }
+                }
+            }
             <input type="hidden" name="IdPersonaje" value="@ViewBag.IdPersonaje"/>
-    <input type="submit" value="finalizar" />
+            <button class="black button">Finalizar</button>
     }
 </div>
 </body>
