@@ -137,6 +137,7 @@ namespace QuienEsQuien.Controllers
             }
             else
             {
+                //SACAR PERSONAJES DE Session["ListaPersonajes"]
                 List<Personajes> ListaPersonajes = (List<Personajes>)Session["ListaPersonajes"];
                 List<Personaje_pregunta> Per_preg = BD.ListarPersonajes_Pregunta();
                 int CantPersonajes = ListaPersonajes.Count();
@@ -160,6 +161,7 @@ namespace QuienEsQuien.Controllers
             Session["Primera"] = false;
             return View();
         }
+
         public ActionResult Arriesgar(int Personaje)
         {
             if (Personaje == ((Personajes)Session["PersonajeAzar"]).IdPersonaje)
