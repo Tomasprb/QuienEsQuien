@@ -62,6 +62,7 @@ namespace QuienEsQuien.Controllers
             Session["Categoría"] = tCate;
             return RedirectToAction("Mostrar_personajes");
         }
+
         public ActionResult Mostrar_personajes()
         {
             if ((int)Session["BitcoinsARestar"] != 0 && (bool)Session["Primera"] == false)
@@ -111,52 +112,41 @@ namespace QuienEsQuien.Controllers
 
             //ME FIJO SI LA PREGUNTA ES CORRECTA
             Personajes p = (Personajes)Session["PersonajeAzar"];
-            int respuesta = BD.Respuesta(Pregunta, p.IdPersonaje);
-            if (respuesta == -1)
+            if (BD.Respuesta(Pregunta, p.IdPersonaje) == true)
             {
                 //SACAR PERSONAJES DE Session["ListaPersonajes"]
-                List<Personajes> ListaPersonajes = (List<Personajes>)Session["ListaPersonajes"];
-                List<Personaje_pregunta> Per_preg = BD.ListarPersonajes_Pregunta();
-                int CantPersonajes = ListaPersonajes.Count();
-                int iPersonajes = 0;
-                bool salir = false;
-                while ((iPersonajes < CantPersonajes) && !salir)
+                int count = ((List<Personajes>)Session["ListaPersonajes"]).Count();
+                List<Personajes> PersonajesRestantes = (List<Personajes>)Session["ListaPersonajes"];
+                while (count != 0)
                 {
-                    foreach (Personaje_pregunta x in Per_preg)
+                    bool a = true;
+                    a = BD.Respuesta(Pregunta, PersonajesRestantes[count - 1].IdPersonaje);
+                    if(a == false)
                     {
-                        if (x.IdPregunta == Pregunta && x.IdPersonaje == ListaPersonajes[iPersonajes].IdPersonaje)
-                        {
-                            ListaPersonajes.RemoveAt(iPersonajes);
-                            salir = true;
-                        }
+                        PersonajesRestantes.RemoveAt(count - 1);
                     }
-                    iPersonajes++;
+                    count--;
                 }
-                Session["ListaPersonajes"] = ListaPersonajes;
-                ViewBag.Respuesta = false;
+                Session["ListaPersonajes"] = PersonajesRestantes;
+                ViewBag.Respuesta = true;
             }
             else
             {
                 //SACAR PERSONAJES DE Session["ListaPersonajes"]
-                List<Personajes> ListaPersonajes = (List<Personajes>)Session["ListaPersonajes"];
-                List<Personaje_pregunta> Per_preg = BD.ListarPersonajes_Pregunta();
-                int CantPersonajes = ListaPersonajes.Count();
-                int iPersonajes = 0;
-                bool salir = false;
-                while ((iPersonajes < CantPersonajes) && !salir)
+                int count = ((List<Personajes>)Session["ListaPersonajes"]).Count();
+                List<Personajes> PersonajesRestantes = (List<Personajes>)Session["ListaPersonajes"];
+                while (count != 0)
                 {
-                    foreach(Personaje_pregunta x in Per_preg)
+                    bool a = false;
+                    a = BD.Respuesta(Pregunta, PersonajesRestantes[count - 1].IdPersonaje);
+                    if (a == true)
                     {
-                        if (x.IdPregunta != Pregunta && x.IdPersonaje == ListaPersonajes[iPersonajes].IdPersonaje)
-                        {
-                            ListaPersonajes.RemoveAt(iPersonajes);
-                            salir = true;
-                        }
+                        PersonajesRestantes.RemoveAt(count - 1);
                     }
-                    iPersonajes++;
+                    count--;
                 }
-                Session["ListaPersonajes"] = ListaPersonajes;
-                ViewBag.Respuesta = true;
+                Session["ListaPersonajes"] = PersonajesRestantes;
+                ViewBag.Respuesta = false;
             }
             Session["Primera"] = false;
             return View();
@@ -176,6 +166,7 @@ namespace QuienEsQuien.Controllers
                 return View("Respuesta");
             }
         }
+
         public ActionResult Arriesgar_personaje()
         {
             return View("Arriesgar_personaje");

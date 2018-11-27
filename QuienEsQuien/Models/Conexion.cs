@@ -562,9 +562,9 @@ namespace QuienesQuien.Models
             return lista;
         }
 
-        public int Respuesta(int Pregunta, int Personaje)
+        public bool Respuesta(int Pregunta, int Personaje)
         {
-            int ID = -1;
+            bool found = false;
             SqlConnection conexion = Conectar();
             SqlCommand consulta = conexion.CreateCommand();
             consulta.CommandText = "sp_Respuesta";
@@ -572,13 +572,13 @@ namespace QuienesQuien.Models
             consulta.Parameters.AddWithValue("@pIdPersonaje", Personaje);
             consulta.Parameters.AddWithValue("@pIdPregunta", Pregunta);
             SqlDataReader dataReader = consulta.ExecuteReader();
-            while (dataReader.Read())
+            if (dataReader.Read())
             {
-                ID++;
+                found = true;
             }
 
             Desconectar(conexion);
-            return ID;
+            return found;
         }
 
         public void RestarBitcoins(int bits, int user)
