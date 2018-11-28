@@ -158,55 +158,75 @@ namespace QuienEsQuien.Controllers
 
         public ActionResult Arriesgar(int Personaje)
         {
-            if(Personaje == ((Personajes)Session["PersonajeAzar"]).IdPersonaje && (string)Session["NombreNow"] != null)
+            if (Personaje == ((Personajes)Session["PersonajeAzar"]).IdPersonaje && (string)Session["NombreNow"] != null)
             {
                 string Nombre = (string)Session["NombreNow"];
                 BD.RestarBitcoins((int)Session["BitcoinsARestar"], Nombre);
+                ViewBag.Partida = true;
                 return View("Fin");
             }
-            else if(Personaje != ((Personajes)Session["PersonajeAzar"]).IdPersonaje && (string)Session["NombreNow"] != null)
+            else if (Personaje != ((Personajes)Session["PersonajeAzar"]).IdPersonaje && (string)Session["NombreNow"] != null)
             {
-                Session["BitcoinsARestar"] = (int)Session["BitcoinsARestar"] - 50000;
-                ViewBag.Arriesgar = false;
-                //SACO AL PERSONAJE DE Session["ListaPersonajes"]
-                List<Personajes> PersonajesRestantes = (List<Personajes>)Session["ListaPersonajes"];
-                Personajes P = BD.ObtenerPersonaje(Personaje);
-                int lugar = 0;
-                foreach (Personajes x in PersonajesRestantes)
+                if (((List<Personajes>)Session["ListaPersonajes"]).Count() > 5)
                 {
-                    if (x.IdPersonaje == Personaje)
+                    Session["BitcoinsARestar"] = (int)Session["BitcoinsARestar"] - 50000;
+                    ViewBag.Arriesgar = false;
+                    //SACO AL PERSONAJE DE Session["ListaPersonajes"]
+                    List<Personajes> PersonajesRestantes = (List<Personajes>)Session["ListaPersonajes"];
+                    Personajes P = BD.ObtenerPersonaje(Personaje);
+                    int lugar = 0;
+                    foreach (Personajes x in PersonajesRestantes)
                     {
-                        PersonajesRestantes.RemoveAt(lugar);
-                        break;
+                        if (x.IdPersonaje == Personaje)
+                        {
+                            PersonajesRestantes.RemoveAt(lugar);
+                            break;
+                        }
+                        lugar++;
                     }
-                    lugar++;
+                    Session["ListaPersonajes"] = PersonajesRestantes;
+                    return View("Respuesta");
                 }
-                Session["ListaPersonajes"] = PersonajesRestantes;
-                return View("Respuesta");
+                else
+                {
+                    string Nombre = (string)Session["NombreNow"];
+                    BD.Perder((int)Session["BitcoinsARestar"], Nombre);
+                    ViewBag.Partida = false;
+                    return View("Fin");
+                }
             }
-            else if(Personaje == ((Personajes)Session["PersonajeAzar"]).IdPersonaje && (string)Session["NombreNow"] == null)
+            else if (Personaje == ((Personajes)Session["PersonajeAzar"]).IdPersonaje && (string)Session["NombreNow"] == null)
             {
+                ViewBag.Partida = true;
                 return View("Fin");
             }
             else
             {
-                Session["BitcoinsARestar"] = (int)Session["BitcoinsARestar"] - 50000;
-                ViewBag.Arriesgar = false;
-                //SACO AL PERSONAJE DE Session["ListaPersonajes"]
-                List<Personajes> PersonajesRestantes = (List<Personajes>)Session["ListaPersonajes"];
-                Personajes P = BD.ObtenerPersonaje(Personaje);
-                int lugar = 0;
-                foreach(Personajes x in PersonajesRestantes)
+                if (((List<Personajes>)Session["ListaPersonajes"]).Count() > 5)
                 {
-                    if(x.IdPersonaje == Personaje)
+                    Session["BitcoinsARestar"] = (int)Session["BitcoinsARestar"] - 50000;
+                    ViewBag.Arriesgar = false;
+                    //SACO AL PERSONAJE DE Session["ListaPersonajes"]
+                    List<Personajes> PersonajesRestantes = (List<Personajes>)Session["ListaPersonajes"];
+                    Personajes P = BD.ObtenerPersonaje(Personaje);
+                    int lugar = 0;
+                    foreach (Personajes x in PersonajesRestantes)
                     {
-                        PersonajesRestantes.RemoveAt(lugar);
-                        break;
+                        if (x.IdPersonaje == Personaje)
+                        {
+                            PersonajesRestantes.RemoveAt(lugar);
+                            break;
+                        }
+                        lugar++;
                     }
-                    lugar++;
+                    Session["ListaPersonajes"] = PersonajesRestantes;
+                    return View("Respuesta");
                 }
-                Session["ListaPersonajes"] = PersonajesRestantes;
-                return View("Respuesta");
+                else
+                {
+                    ViewBag.Partida = false;
+                    return View("Fin");
+                }
             }
         }
 

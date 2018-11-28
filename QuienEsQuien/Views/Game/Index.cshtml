@@ -14,7 +14,8 @@
 </head>
 <body class="w3-black">
     <div class="w3-padding-large" id="main">
-        <center><h1>Juego</h1></center>
+        <center><h1>Juego</h1></center> <br />
+        <p style="float:right;margin-top:-40px">Bitcoins iniciales: @Session["BitcoinsARestar"]</p>
         @using (Html.BeginForm("Categoria", "Game", FormMethod.Post))
         {
             <h3>Elija una categoría con la cual jugar</h3>

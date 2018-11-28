@@ -593,5 +593,18 @@ namespace QuienesQuien.Models
 
             Desconectar(conexion);
         }
+
+        public void Perder(int bits, string user)
+        {
+            SqlConnection conexion = Conectar();
+            SqlCommand consulta = conexion.CreateCommand();
+            consulta.CommandText = "sp_Perder";
+            consulta.CommandType = System.Data.CommandType.StoredProcedure;
+            consulta.Parameters.AddWithValue("@pBitcoins", bits);
+            consulta.Parameters.AddWithValue("@pNom", user);
+            consulta.ExecuteNonQuery();
+
+            Desconectar(conexion);
+        }
     }
 }
