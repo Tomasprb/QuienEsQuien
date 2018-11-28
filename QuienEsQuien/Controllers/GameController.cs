@@ -15,7 +15,7 @@ namespace QuienEsQuien.Controllers
         public ActionResult Index()
         {
             Session["Primera"] = true;
-            Session["BitcoinsARestar"] = 0;
+            Session["BitcoinsARestar"] = 1000000;
             ViewBag.Categorias = BD.ListarCategorias();
             return View();
         }
@@ -90,79 +90,122 @@ namespace QuienEsQuien.Controllers
         [HttpPost]
         public ActionResult Respuesta(int IdPreguntaElegida)
         {
-            int Pregunta = IdPreguntaElegida;
-            //BORRO LA PREGUNTA DEL SESSION
-            List<Preguntas> ListaPreguntas = (List<Preguntas>)Session["ListaPreguntas"];
-            int CantPreg = ListaPreguntas.Count();
-            int iPreg = 0;
-            bool Salir = false;
-            while ((iPreg < CantPreg) && !Salir)
+            if (IdPreguntaElegida != -10)
             {
-                if (ListaPreguntas[iPreg].IdPregunta == Pregunta)
+                int Pregunta = IdPreguntaElegida;
+                //BORRO LA PREGUNTA DEL SESSION
+                List<Preguntas> ListaPreguntas = (List<Preguntas>)Session["ListaPreguntas"];
+                int CantPreg = ListaPreguntas.Count();
+                int iPreg = 0;
+                bool Salir = false;
+                while ((iPreg < CantPreg) && !Salir)
                 {
-                    ListaPreguntas.RemoveAt(iPreg);
-                    Salir = true;
-                }
-                iPreg++;
-            }
-            Session["ListaPreguntas"] = ListaPreguntas;
-
-            //RESTO BITCOINS
-            Session["BitcoinsARestar"] = (int)Session["BitcoinsARestar"] - 500;
-
-            //ME FIJO SI LA PREGUNTA ES CORRECTA
-            Personajes p = (Personajes)Session["PersonajeAzar"];
-            if (BD.Respuesta(Pregunta, p.IdPersonaje) == true)
-            {
-                //SACAR PERSONAJES DE Session["ListaPersonajes"]
-                int count = ((List<Personajes>)Session["ListaPersonajes"]).Count();
-                List<Personajes> PersonajesRestantes = (List<Personajes>)Session["ListaPersonajes"];
-                while (count != 0)
-                {
-                    bool a = true;
-                    a = BD.Respuesta(Pregunta, PersonajesRestantes[count - 1].IdPersonaje);
-                    if(a == false)
+                    if (ListaPreguntas[iPreg].IdPregunta == Pregunta)
                     {
-                        PersonajesRestantes.RemoveAt(count - 1);
+                        ListaPreguntas.RemoveAt(iPreg);
+                        Salir = true;
                     }
-                    count--;
+                    iPreg++;
                 }
-                Session["ListaPersonajes"] = PersonajesRestantes;
-                ViewBag.Respuesta = true;
-            }
-            else
-            {
-                //SACAR PERSONAJES DE Session["ListaPersonajes"]
-                int count = ((List<Personajes>)Session["ListaPersonajes"]).Count();
-                List<Personajes> PersonajesRestantes = (List<Personajes>)Session["ListaPersonajes"];
-                while (count != 0)
+                Session["ListaPreguntas"] = ListaPreguntas;
+
+                //RESTO BITCOINS
+                Session["BitcoinsARestar"] = (int)Session["BitcoinsARestar"] - 500;
+
+                //ME FIJO SI LA PREGUNTA ES CORRECTA
+                Personajes p = (Personajes)Session["PersonajeAzar"];
+                if (BD.Respuesta(Pregunta, p.IdPersonaje) == true)
                 {
-                    bool a = false;
-                    a = BD.Respuesta(Pregunta, PersonajesRestantes[count - 1].IdPersonaje);
-                    if (a == true)
+                    //SACAR PERSONAJES DE Session["ListaPersonajes"]
+                    int count = ((List<Personajes>)Session["ListaPersonajes"]).Count();
+                    List<Personajes> PersonajesRestantes = (List<Personajes>)Session["ListaPersonajes"];
+                    while (count != 0)
                     {
-                        PersonajesRestantes.RemoveAt(count - 1);
+                        bool a = true;
+                        a = BD.Respuesta(Pregunta, PersonajesRestantes[count - 1].IdPersonaje);
+                        if (a == false)
+                        {
+                            PersonajesRestantes.RemoveAt(count - 1);
+                        }
+                        count--;
                     }
-                    count--;
+                    Session["ListaPersonajes"] = PersonajesRestantes;
+                    ViewBag.Respuesta = true;
                 }
-                Session["ListaPersonajes"] = PersonajesRestantes;
-                ViewBag.Respuesta = false;
+                else
+                {
+                    //SACAR PERSONAJES DE Session["ListaPersonajes"]
+                    int count = ((List<Personajes>)Session["ListaPersonajes"]).Count();
+                    List<Personajes> PersonajesRestantes = (List<Personajes>)Session["ListaPersonajes"];
+                    while (count != 0)
+                    {
+                        bool a = false;
+                        a = BD.Respuesta(Pregunta, PersonajesRestantes[count - 1].IdPersonaje);
+                        if (a == true)
+                        {
+                            PersonajesRestantes.RemoveAt(count - 1);
+                        }
+                        count--;
+                    }
+                    Session["ListaPersonajes"] = PersonajesRestantes;
+                    ViewBag.Respuesta = false;
+                }
+                Session["Primera"] = false;
+                ViewBag.IdPreguntaElegida = Pregunta;
             }
-            Session["Primera"] = false;
             return View();
         }
 
         public ActionResult Arriesgar(int Personaje)
         {
-            if (Personaje == ((Personajes)Session["PersonajeAzar"]).IdPersonaje)
+            if(Personaje == ((Personajes)Session["PersonajeAzar"]).IdPersonaje && (string)Session["NombreNow"] != null)
             {
-                BD.RestarBitcoins((int)Session["BitcoinsARestar"], (int)Session["NombreNow"]);
+                string Nombre = (string)Session["NombreNow"];
+                BD.RestarBitcoins((int)Session["BitcoinsARestar"], Nombre);
+                return View("Fin");
+            }
+            else if(Personaje != ((Personajes)Session["PersonajeAzar"]).IdPersonaje && (string)Session["NombreNow"] != null)
+            {
+                Session["BitcoinsARestar"] = (int)Session["BitcoinsARestar"] - 50000;
+                ViewBag.Arriesgar = false;
+                //SACO AL PERSONAJE DE Session["ListaPersonajes"]
+                List<Personajes> PersonajesRestantes = (List<Personajes>)Session["ListaPersonajes"];
+                Personajes P = BD.ObtenerPersonaje(Personaje);
+                int lugar = 0;
+                foreach (Personajes x in PersonajesRestantes)
+                {
+                    if (x.IdPersonaje == Personaje)
+                    {
+                        PersonajesRestantes.RemoveAt(lugar);
+                        break;
+                    }
+                    lugar++;
+                }
+                Session["ListaPersonajes"] = PersonajesRestantes;
+                return View("Respuesta");
+            }
+            else if(Personaje == ((Personajes)Session["PersonajeAzar"]).IdPersonaje && (string)Session["NombreNow"] == null)
+            {
                 return View("Fin");
             }
             else
             {
                 Session["BitcoinsARestar"] = (int)Session["BitcoinsARestar"] - 50000;
                 ViewBag.Arriesgar = false;
+                //SACO AL PERSONAJE DE Session["ListaPersonajes"]
+                List<Personajes> PersonajesRestantes = (List<Personajes>)Session["ListaPersonajes"];
+                Personajes P = BD.ObtenerPersonaje(Personaje);
+                int lugar = 0;
+                foreach(Personajes x in PersonajesRestantes)
+                {
+                    if(x.IdPersonaje == Personaje)
+                    {
+                        PersonajesRestantes.RemoveAt(lugar);
+                        break;
+                    }
+                    lugar++;
+                }
+                Session["ListaPersonajes"] = PersonajesRestantes;
                 return View("Respuesta");
             }
         }

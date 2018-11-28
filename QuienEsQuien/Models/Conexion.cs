@@ -581,35 +581,17 @@ namespace QuienesQuien.Models
             return found;
         }
 
-        public void RestarBitcoins(int bits, int user)
+        public void RestarBitcoins(int bits, string user)
         {
             SqlConnection conexion = Conectar();
             SqlCommand consulta = conexion.CreateCommand();
             consulta.CommandText = "sp_ModificacionBitcoins";
             consulta.CommandType = System.Data.CommandType.StoredProcedure;
             consulta.Parameters.AddWithValue("@pBitcoins", bits);
-            consulta.Parameters.AddWithValue("@pIdUser", user);
+            consulta.Parameters.AddWithValue("@pNom", user);
             consulta.ExecuteNonQuery();
 
             Desconectar(conexion);
         }
-
-        /*public List<int> Personaje_pregunta(int pregunta)
-        {
-            List<int> ID = new List<int>();
-            SqlConnection conexion = Conectar();
-            SqlCommand consulta = conexion.CreateCommand();
-            consulta.CommandText = "sp_Personaje_pregunta";
-            consulta.CommandType = System.Data.CommandType.StoredProcedure;
-            consulta.Parameters.AddWithValue("@pIdPregunta", pregunta);
-            SqlDataReader dataReader = consulta.ExecuteReader();
-            while (dataReader.Read())
-            {
-                ID.Add(Convert.ToInt32(dataReader["IdPregunta"]));
-            }
-
-            Desconectar(conexion);
-            return ID;
-        }*/
     }
 }

@@ -29,15 +29,12 @@
                 {
                     <tr class="Centrado">
                         <td>
-                            <form action="@Url.Action("Arriesgar", "Game")" method="post">
-                                <button class="button black" name="Personaje" value="@MiPersonaje.IdPersonaje">
-                                    <h3><b>@MiPersonaje.Nombre</b></h3>
-                                </button>
-                            </form>
+                            @Html.ActionLink(MiPersonaje.Nombre, "Arriesgar", "Game", new { Personaje = MiPersonaje.IdPersonaje }, null)
                         </td>
                     </tr>
                 }
             }
         </table>
+        <input type="hidden" name="IdPreguntaElegida" value="-10" />
     </div>
 </body>
