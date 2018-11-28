@@ -15,7 +15,7 @@ namespace QuienEsQuien.Controllers
         public ActionResult Index()
         {
             Session["Primera"] = true;
-            Session["BitcoinsARestar"] = 1000000;
+            Session["BitcoinsARestar"] = 100000;
             ViewBag.Categorias = BD.ListarCategorias();
             return View();
         }

@@ -1,4 +1,5 @@
-﻿@{
+﻿@using QuienEsQuien.Models;
+@{
     ViewBag.Title = "Fin";
 }
 
@@ -29,6 +30,7 @@
         {
             <center><h3 style="color:lightgreen">¡Felicitaciones, ganaste!</h3></center> <br />
             <p style="float:right;margin-top:-40px">Bitcoins ganados: @Session["BitcoinsARestar"]</p>
+            <center><img src="~/Content/@(((Personajes)Session["PersonajeAzar"]).Imagen)" alt="Foto Personaje" class="img-rounded" style="width: 100px;height: 100px" /></center>
             <div id="outer" style="margin-top:40px">
                 <div class="inner">
                     <form action="@Url.Action("Index", "Game")">
@@ -49,8 +51,10 @@
         }
         else
         {
-            <center><h3 style="color:red">¡Perdiste!</h3></center> <br />
+            <center><h3 style="color:red">¡Perdiste!</h3></center>
+            <center><h4>El personaje era el siguiente:</h4></center> <br />
             <p style="float:right;margin-top:-40px">Bitcoins perdidos: @Session["BitcoinsARestar"]</p>
+            <center><img src="~/Content/@(((Personajes)Session["PersonajeAzar"]).Imagen)" alt="Foto Personaje" class="img-rounded" style="width: 100px;height: 100px" /></center>
             <div id="outer" style="margin-top:40px">
                 <div class="inner">
                     <form action="@Url.Action("Index", "Game")">
