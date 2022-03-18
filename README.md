@@ -1,2 +1,2 @@
 # Who-is-who
-ustedes ya saben lo que es
+Juego clasico recreado en ASP.net (version final)
